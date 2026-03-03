@@ -1212,15 +1212,17 @@ wheels = [
 [[package]]
 name = "tcc-shoplifting"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "i3d-shoplifting" },
+    { name = "matplotlib" },
     { name = "timesformer-shoplifting" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "i3d-shoplifting", editable = "i3d-shoplifting" },
+    { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "timesformer-shoplifting", editable = "timesformer-shoplifting" },
 ]
 

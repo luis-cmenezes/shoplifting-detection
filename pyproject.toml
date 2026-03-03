@@ -4,11 +4,12 @@ version = "0.1.0"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "timesformer-shoplifting",
-    "i3d-shoplifting"
+    "i3d-shoplifting",
+    "matplotlib>=3.10.8",
 ]
 
 [tool.uv]
-package = true
+package = false
 
 [tool.uv.workspace]
 members = [
