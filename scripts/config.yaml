@@ -48,8 +48,8 @@ training:
   # Treinamento do modelo I3D
   i3d:
     # Hiperparâmetros gerais
-    epochs: 70
-    batch_size: 1
+    epochs: 2
+    batch_size: "auto"   # "auto" detecta o máximo via GPU, ou inteiro fixo
     learning_rate: 0.001
     seed: 42
 
@@ -96,8 +96,8 @@ training:
   # Treinamento do modelo TimeSformer
   timesformer:
     # Hiperparâmetros gerais (TrainingArguments do HF Trainer)
-    epochs: 70
-    batch_size: 48
+    epochs: 2
+    batch_size: "auto"   # "auto" detecta o máximo via GPU, ou inteiro fixo
     learning_rate: 0.001
     seed: 42
     gradient_accumulation_steps: 1

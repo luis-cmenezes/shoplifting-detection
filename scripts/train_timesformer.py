@@ -27,9 +27,13 @@ import argparse
 import sys
 from pathlib import Path
 
+import torch
 import yaml
 
 from timesformer_shoplifting.training import TrainConfig, train
+from timesformer_shoplifting.training.find_max_batch_size import (
+    find_max_batch_size,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -85,10 +89,22 @@ def build_train_config(
 
     # --- Mescla valores: CLI > experiment-level > training-level ---
     epochs = cli_overrides.epochs or train_cfg.get("epochs", 70)
-    batch_size = cli_overrides.batch_size or train_cfg.get("batch_size", 48)
     learning_rate = cli_overrides.lr or train_cfg.get("learning_rate", 1e-3)
     seed = cli_overrides.seed or train_cfg.get("seed", 42)
     num_frames = experiment.get("num_frames", 8)
+
+    # batch_size: CLI > YAML.  Se "auto", determina via find_max_batch_size.
+    raw_bs = cli_overrides.batch_size or train_cfg.get("batch_size", 48)
+    if str(raw_bs).lower() == "auto":
+        use_fp16 = torch.cuda.is_available()
+        batch_size = find_max_batch_size(
+            model_name=experiment["model_name"],
+            freeze_strategy=experiment.get("freeze_strategy", "unfreeze_head"),
+            num_frames=num_frames,
+            use_fp16=use_fp16,
+        )
+    else:
+        batch_size = int(raw_bs)
 
     return TrainConfig(
         model_name=experiment["model_name"],
@@ -135,7 +151,8 @@ def parse_cli() -> argparse.Namespace:
 
     # Overrides opcionais de hiperparâmetros (têm prioridade sobre o YAML)
     parser.add_argument("--epochs", type=int, default=None)
-    parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--batch-size", default=None,
+                        help="Batch size (inteiro ou 'auto' para detecção automática).")
     parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--seed", type=int, default=None)
 

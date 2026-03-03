@@ -28,6 +28,7 @@ from pathlib import Path
 import yaml
 
 from i3d_shoplifting.training import TrainConfig, train
+from i3d_shoplifting.training.find_max_batch_size import find_max_batch_size
 
 
 # ---------------------------------------------------------------------------
@@ -90,9 +91,20 @@ def build_train_config(
 
     # --- Mescla valores: CLI > experiment > training-level ---
     epochs = cli_overrides.epochs or train_cfg.get("epochs", 70)
-    batch_size = cli_overrides.batch_size or train_cfg.get("batch_size", 1)
     learning_rate = cli_overrides.lr or train_cfg.get("learning_rate", 1e-3)
     seed = cli_overrides.seed or train_cfg.get("seed", 42)
+
+    # batch_size: CLI > YAML.  Se "auto", determina via find_max_batch_size.
+    raw_bs = cli_overrides.batch_size or train_cfg.get("batch_size", 1)
+    if str(raw_bs).lower() == "auto":
+        batch_size = find_max_batch_size(
+            model_mode=experiment["model_mode"],
+            unfreeze_full_model=experiment.get("unfreeze_full_model", False),
+            rgb_checkpoint=rgb_ckpt,
+            flow_checkpoint=flow_ckpt,
+        )
+    else:
+        batch_size = int(raw_bs)
 
     return TrainConfig(
         model_mode=experiment["model_mode"],
@@ -137,7 +149,8 @@ def parse_cli() -> argparse.Namespace:
 
     # Overrides opcionais de hiperparâmetros (têm prioridade sobre o YAML)
     parser.add_argument("--epochs", type=int, default=None)
-    parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--batch-size", default=None,
+                        help="Batch size (inteiro ou 'auto' para detecção automática).")
     parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--seed", type=int, default=None)
 
