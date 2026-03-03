@@ -1,0 +1,21 @@
+[project]
+name = "tcc-shoplifting"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "timesformer-shoplifting",
+    "i3d-shoplifting"
+]
+
+[tool.uv]
+package = true
+
+[tool.uv.workspace]
+members = [
+    "timesformer-shoplifting",
+    "i3d-shoplifting"
+]
+
+[tool.uv.sources]
+timesformer-shoplifting = { workspace = true }
+i3d-shoplifting = { workspace = true }

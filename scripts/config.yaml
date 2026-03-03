@@ -1,0 +1,14 @@
+# Compare Shoplifting Models - Configuração Central
+data:
+  huggingface_repo: "menezes-luis/tcc-shoplifting"
+  raw_data_dir: "datasets/raw"
+  
+  # Datasets específicos (será baixado do HF)
+  datasets:
+    dcsass:
+      root: "datasets/DCSASS_Dataset"
+      annotations: "datasets/DCSASS_Dataset/Shoplifting.csv"
+    mnnit:
+      root: "datasets/Shoplifting - MNNIT"
+    shoplifting_2:
+      root: "datasets/Shoplifting Dataset 2.0"
