@@ -13,8 +13,14 @@ data:
     shoplifting_2:
       root: "datasets/raw/Shoplifting Dataset 2.0"
 
-# Preprocessamento para o modelo I3D
+  # Pesos pré-treinados (baixados do mesmo repo HF)
+  pretrained_weights:
+    i3d:
+      rgb: "datasets/raw/pretrained_weights/i3d/rgb_imagenet.pt"
+      flow: "datasets/raw/pretrained_weights/i3d/flow_imagenet.pt"
+
 preprocessing:
+  # Preprocessamento para o modelo I3D
   i3d:
     # Diretório intermediário com frames brutos extraídos dos vídeos
     event_blocks_dir: "datasets/preprocessed/i3d/event_blocks_frames"
@@ -24,17 +30,119 @@ preprocessing:
     optical_flow_dir: "datasets/preprocessed/i3d/i3d_inputs/optical_flow"
     # Número de frames amostrados por bloco
     num_frames: 64
+  # Preprocessamento para o modelo TimeSformer
+  timesformer:
+    # Diretório de saída com vídeos padronizados (Normal/ e Shoplifting/)
+    output_dir: "datasets/preprocessed/timesformer/standardized"
+    # FPS e resolução alvo para padronização
+    target_fps: 25
+    target_width: 224
+    target_height: 224
+    # Prefixos para nomeação dos vídeos por dataset de origem
+    prefixes:
+      dcsass: "dcsass"
+      mnnit: "mnnit"
+      s2: "s2"
 
-# Preprocessamento para o modelo TimeSformer
-preprocessing_timesformer:
-  # Diretório de saída com vídeos padronizados (Normal/ e Shoplifting/)
-  output_dir: "datasets/preprocessed/timesformer/standardized"
-  # FPS e resolução alvo para padronização
-  target_fps: 25
-  target_width: 224
-  target_height: 224
-  # Prefixos para nomeação dos vídeos por dataset de origem
-  prefixes:
-    dcsass: "dcsass"
-    mnnit: "mnnit"
-    s2: "s2"
+training:
+  # Treinamento do modelo I3D
+  i3d:
+    # Hiperparâmetros gerais
+    epochs: 70
+    batch_size: 1
+    learning_rate: 0.001
+    seed: 42
+
+    # Divisão do dataset (stratified split)
+    # Primeiro split: (1 - test_size) para treino, test_size para temp
+    # Segundo split:  temp é dividido 50/50 em validação e teste
+    split:
+      test_size: 0.3        # 30% → validação + teste
+      val_test_ratio: 0.5   # metade do temp = val, metade = teste
+
+    # Data augmentation (aplicado apenas no treino)
+    augmentation:
+      p_flip: 0.5
+      color_jitter:
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+        hue: 0.1
+
+    # Checkpoints pré-treinados do Kinetics (ImageNet init)
+    # Diretório base de saída para experimentos
+    output_dir: "results/i3d/"
+
+    # Quantos batches por época salvar como vídeos de comparação
+    steps_to_visualize_per_epoch: 1
+
+    # Lista de experimentos a executar
+    # Cada item combina modalidade (rgb_optical | rgb_only) com estratégia de
+    # fine-tuning (unfreeze_full_model: true/false)
+    experiments:
+      - name: "head_rgb_optical"
+        model_mode: "rgb_optical"
+        unfreeze_full_model: false
+      - name: "full_rgb_optical"
+        model_mode: "rgb_optical"
+        unfreeze_full_model: true
+      - name: "head_rgb_only"
+        model_mode: "rgb_only"
+        unfreeze_full_model: false
+      - name: "full_rgb_only"
+        model_mode: "rgb_only"
+        unfreeze_full_model: true
+
+  # Treinamento do modelo TimeSformer
+  timesformer:
+    # Hiperparâmetros gerais (TrainingArguments do HF Trainer)
+    epochs: 70
+    batch_size: 48
+    learning_rate: 0.001
+    seed: 42
+    gradient_accumulation_steps: 1
+    dataloader_num_workers: 5
+    logging_steps: 10
+
+    # Divisão do dataset (stratified split — mesma lógica do I3D)
+    split:
+      test_size: 0.3
+      val_test_ratio: 0.5
+
+    # Data augmentation (aplicado apenas no treino)
+    augmentation:
+      p_flip: 0.5
+      color_jitter:
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+        hue: 0.1
+
+    # Early stopping: para se não melhorar em N épocas
+    early_stopping_patience: 3
+
+    # Diretório base de saída para experimentos
+    output_dir: "results/timesformer"
+
+    # Diretório base para logs do TensorBoard
+    log_dir: "results/timesformer_logs"
+
+    # Lista de experimentos a executar
+    # Cada item combina checkpoint base × estratégia de fine-tuning × num_frames
+    experiments:
+      - name: "head_k400_8f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 8
+      - name: "full_k400_8f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 8
+      - name: "head_ssv2_8f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 8
+      - name: "full_ssv2_8f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 8

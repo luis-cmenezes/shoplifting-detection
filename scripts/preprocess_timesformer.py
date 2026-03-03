@@ -67,7 +67,7 @@ def load_config(config_path: str) -> dict:
 
 def _get_timesformer_cfg(config: dict) -> dict:
     """Extrai a seção de configuração do TimeSformer."""
-    return config["preprocessing_timesformer"]
+    return config["preprocessing"]["timesformer"]
 
 
 #  Etapa 1: DCSASS (blocos com contexto) 

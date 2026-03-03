@@ -10,6 +10,7 @@ wheels/
 .venv
 
 datasets/
+results/
 
 # Dependencies
 i3d-shoplifting/

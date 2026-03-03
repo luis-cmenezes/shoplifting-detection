@@ -101,6 +101,7 @@ def verify_dataset_integrity(config):
     """
     print("Verificando integridade dos datasets...")
     
+    all_ok = True
     missing_datasets = []
     
     for dataset_name, dataset_config in config['data']['datasets'].items():
@@ -122,10 +123,23 @@ def verify_dataset_integrity(config):
     
     if missing_datasets:
         print(f"  Datasets em falta: {missing_datasets}")
-        return False
-    else:
-        print(" Todos os datasets verificados com sucesso!")
-        return True
+        all_ok = False
+    
+    # Verificar pesos pré-treinados
+    pretrained = config.get('data', {}).get('pretrained_weights', {})
+    for model_name, weights in pretrained.items():
+        for weight_name, weight_path in weights.items():
+            p = Path(weight_path)
+            if not p.exists():
+                print(f"  pretrained_weights/{model_name}/{weight_name}: {p} não encontrado")
+                all_ok = False
+            else:
+                print(f"  pretrained_weights/{model_name}/{weight_name}: OK")
+    
+    if all_ok:
+        print(" Todos os datasets e pesos verificados com sucesso!")
+    
+    return all_ok
 
 def main():
     """Função principal."""
