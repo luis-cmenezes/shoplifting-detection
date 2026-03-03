@@ -165,14 +165,11 @@ def main():
     local_dir = config['data']['raw_data_dir']
     
     try:
-        downloaded_path = download_dataset(
+        _ = download_dataset(
             repo_id=repo_id,
             local_dir=local_dir,
             cache_dir=args.cache_dir
         )
-        
-        # Organize structure
-        organize_dataset_structure(downloaded_path, config)
         
         # Final verification
         if verify_dataset_integrity(config):

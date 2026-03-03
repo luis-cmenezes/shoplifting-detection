@@ -6,9 +6,35 @@ data:
   # Datasets específicos (será baixado do HF)
   datasets:
     dcsass:
-      root: "datasets/DCSASS_Dataset"
-      annotations: "datasets/DCSASS_Dataset/Shoplifting.csv"
+      root: "datasets/raw/DCSASS_Dataset"
+      annotations: "datasets/raw/DCSASS_Dataset/Shoplifting.csv"
     mnnit:
-      root: "datasets/Shoplifting - MNNIT"
+      root: "datasets/raw/Shoplifting - MNNIT"
     shoplifting_2:
-      root: "datasets/Shoplifting Dataset 2.0"
+      root: "datasets/raw/Shoplifting Dataset 2.0"
+
+# Preprocessamento para o modelo I3D
+preprocessing:
+  i3d:
+    # Diretório intermediário com frames brutos extraídos dos vídeos
+    event_blocks_dir: "datasets/preprocessed/i3d/event_blocks_frames"
+    # Diretório com inputs RGB (64 frames 224x224 por bloco)
+    rgb_dir: "datasets/preprocessed/i3d/i3d_inputs/rgb"
+    # Diretório com inputs de fluxo ótico (TV-L1)
+    optical_flow_dir: "datasets/preprocessed/i3d/i3d_inputs/optical_flow"
+    # Número de frames amostrados por bloco
+    num_frames: 64
+
+# Preprocessamento para o modelo TimeSformer
+preprocessing_timesformer:
+  # Diretório de saída com vídeos padronizados (Normal/ e Shoplifting/)
+  output_dir: "datasets/preprocessed/timesformer/standardized"
+  # FPS e resolução alvo para padronização
+  target_fps: 25
+  target_width: 224
+  target_height: 224
+  # Prefixos para nomeação dos vídeos por dataset de origem
+  prefixes:
+    dcsass: "dcsass"
+    mnnit: "mnnit"
+    s2: "s2"
