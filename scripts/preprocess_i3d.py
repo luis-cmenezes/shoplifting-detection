@@ -145,7 +145,7 @@ def step_sample(config: dict, project_root: Path) -> None:
 
 #  Etapa 3: Fluxo ótico 
 
-def step_flow(config: dict, project_root: Path) -> None:
+def step_flow(config: dict, project_root: Path, num_workers: int = 0) -> None:
     """Gera fluxo ótico denso (TV-L1) a partir dos inputs RGB."""
     i3d_cfg = config["preprocessing"]["i3d"]
     source_dir = str(resolve_path(project_root, i3d_cfg["rgb_dir"]))
@@ -161,7 +161,7 @@ def step_flow(config: dict, project_root: Path) -> None:
         print(f"ERRO: Diretório RGB '{source_dir}' não existe. Execute a etapa 'sample' primeiro.")
         sys.exit(1)
 
-    gen_optical_flow(source_dir, output_dir)
+    gen_optical_flow(source_dir, output_dir, num_workers=num_workers)
     print("\n✔ Fluxo ótico gerado.\n")
 
 
@@ -195,6 +195,12 @@ def main() -> None:
         default=ALL_STEPS,
         help="Etapas a executar (default: todas). Opções: extract, sample, flow",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=0,
+        help="Processos paralelos para fluxo ótico (0 = automático: todos os cores CPU, ou 1 se GPU).",
+    )
     args = parser.parse_args()
 
     # Raiz do projeto = diretório pai de scripts/
@@ -206,7 +212,10 @@ def main() -> None:
     print(f"Etapas          : {', '.join(args.steps)}\n")
 
     for step_name in args.steps:
-        STEPS[step_name](config, project_root)
+        if step_name == "flow":
+            step_flow(config, project_root, num_workers=args.workers)
+        else:
+            STEPS[step_name](config, project_root)
 
     print("=" * 70)
     print("PIPELINE I3D CONCLUÍDO COM SUCESSO")
