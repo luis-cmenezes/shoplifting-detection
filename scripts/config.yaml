@@ -119,7 +119,7 @@ training:
         hue: 0.1
 
     # Early stopping: para se não melhorar em N épocas
-    early_stopping_patience: 3
+    early_stopping_patience: 7
 
     # Diretório base de saída para experimentos
     output_dir: "results/timesformer"
@@ -129,7 +129,9 @@ training:
 
     # Lista de experimentos a executar
     # Cada item combina checkpoint base × estratégia de fine-tuning × num_frames
+    # NOTA: num_frames > 8 usa interpolação dos time_embeddings pré-treinados
     experiments:
+      # ---------- 8 frames (baseline - mantidos para comparação) ----------
       - name: "head_k400_8f"
         model_name: "facebook/timesformer-base-finetuned-k400"
         freeze_strategy: "unfreeze_head"
@@ -146,3 +148,39 @@ training:
         model_name: "facebook/timesformer-base-finetuned-ssv2"
         freeze_strategy: "unfreeze_all"
         num_frames: 8
+
+      # ---------- 32 frames (4× mais contexto temporal) ----------
+      - name: "head_k400_32f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 32
+      - name: "full_k400_32f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 32
+      - name: "head_ssv2_32f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 32
+      - name: "full_ssv2_32f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 32
+
+      # ---------- 64 frames (paridade com I3D) ----------
+      - name: "head_k400_64f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 64
+      - name: "full_k400_64f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 64
+      - name: "head_ssv2_64f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 64
+      - name: "full_ssv2_64f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 64
