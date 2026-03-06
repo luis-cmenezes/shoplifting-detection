@@ -16,6 +16,7 @@ Uso:
 """
 
 import argparse
+import shutil
 import sys
 from pathlib import Path
 
@@ -140,7 +141,16 @@ def step_sample(config: dict, project_root: Path) -> None:
         sys.exit(1)
 
     sample_blocks(source_dir, output_dir)
-    print("\n✔ Inputs RGB gerados.\n")
+    print("\n✔ Inputs RGB gerados.")
+
+    # Limpa diretório intermediário (event_blocks_frames) que não é mais necessário
+    source_path = Path(source_dir)
+    if source_path.exists():
+        print(f"  Removendo diretório intermediário: {source_dir}")
+        shutil.rmtree(source_path)
+        print("  ✔ Diretório intermediário removido.\n")
+    else:
+        print()
 
 
 #  Etapa 3: Fluxo ótico 
