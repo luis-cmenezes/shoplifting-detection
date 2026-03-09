@@ -132,22 +132,22 @@ training:
     # NOTA: num_frames > 8 usa interpolação dos time_embeddings pré-treinados
     experiments:
       # ---------- 8 frames (baseline - mantidos para comparação) ----------
-      # - name: "head_k400_8f"
-      #   model_name: "facebook/timesformer-base-finetuned-k400"
-      #   freeze_strategy: "unfreeze_head"
-      #   num_frames: 8
-      # - name: "full_k400_8f"
-      #   model_name: "facebook/timesformer-base-finetuned-k400"
-      #   freeze_strategy: "unfreeze_all"
-      #   num_frames: 8
-      # - name: "head_ssv2_8f"
-      #   model_name: "facebook/timesformer-base-finetuned-ssv2"
-      #   freeze_strategy: "unfreeze_head"
-      #   num_frames: 8
-      # - name: "full_ssv2_8f"
-      #   model_name: "facebook/timesformer-base-finetuned-ssv2"
-      #   freeze_strategy: "unfreeze_all"
-      #   num_frames: 8
+      - name: "head_k400_8f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 8
+      - name: "full_k400_8f"
+        model_name: "facebook/timesformer-base-finetuned-k400"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 8
+      - name: "head_ssv2_8f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_head"
+        num_frames: 8
+      - name: "full_ssv2_8f"
+        model_name: "facebook/timesformer-base-finetuned-ssv2"
+        freeze_strategy: "unfreeze_all"
+        num_frames: 8
 
       # ---------- 32 frames (4× mais contexto temporal) ----------
       - name: "head_k400_32f"
