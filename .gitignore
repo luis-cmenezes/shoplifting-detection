@@ -11,6 +11,7 @@ wheels/
 
 datasets/
 results/
+logs/
 
 # Dependencies
 i3d-shoplifting/

@@ -1210,6 +1210,19 @@ wheels = [
 ]
 
 [[package]]
+name = "tbparse"
+version = "0.0.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pandas" },
+    { name = "tensorboard" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/97/0b/553a13cb39f8ccad888c2d9b07e04cb1a60011e1073771fd6b5d904b61c4/tbparse-0.0.9.tar.gz", hash = "sha256:528e7da6929148b612a517adb5fbdee709224cb7e2420489a9b6b174f2f808bc", size = 21362, upload-time = "2024-08-16T04:37:50.185Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/17/7a/56818acfbf03ef6eae4c3e0a7091ab6ffd8c3b44af93f2982297c07b50f2/tbparse-0.0.9-py3-none-any.whl", hash = "sha256:51a001728bc539a1efed9f03450b1e0151ad14011c8c52f156cf55dc1fbaa884", size = 19595, upload-time = "2024-08-16T04:37:48.546Z" },
+]
+
+[[package]]
 name = "tcc-shoplifting"
 version = "0.1.0"
 source = { virtual = "." }
@@ -1275,6 +1288,7 @@ dependencies = [
     { name = "evaluate" },
     { name = "pandas" },
     { name = "scikit-learn" },
+    { name = "tbparse" },
     { name = "tensorboard" },
     { name = "torch" },
     { name = "torchvision" },
@@ -1289,6 +1303,7 @@ requires-dist = [
     { name = "evaluate", specifier = ">=0.4.6" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
+    { name = "tbparse", specifier = ">=0.0.9" },
     { name = "tensorboard", specifier = ">=2.20.0" },
     { name = "torch", specifier = ">=2.9,<3.0" },
     { name = "torchvision", specifier = ">=0.24,<0.25" },
