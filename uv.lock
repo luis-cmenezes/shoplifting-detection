@@ -1229,6 +1229,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "i3d-shoplifting" },
     { name = "matplotlib" },
+    { name = "seaborn" },
     { name = "timesformer-shoplifting" },
 ]
 
@@ -1236,6 +1237,7 @@ dependencies = [
 requires-dist = [
     { name = "i3d-shoplifting", editable = "i3d-shoplifting" },
     { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "seaborn", specifier = ">=0.13.2" },
     { name = "timesformer-shoplifting", editable = "timesformer-shoplifting" },
 ]
 

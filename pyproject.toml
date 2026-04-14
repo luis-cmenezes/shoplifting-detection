@@ -6,6 +6,7 @@ dependencies = [
     "timesformer-shoplifting",
     "i3d-shoplifting",
     "matplotlib>=3.10.8",
+    "seaborn>=0.13.2",
 ]
 
 [tool.uv]
