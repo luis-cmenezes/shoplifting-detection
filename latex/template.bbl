@@ -1,0 +1,241 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Ansari e Singh 2023]{shoplifting_mnnit}
+\abntrefinfo{Ansari e Singh}{ANSARI; SINGH}{2023}
+{ANSARI, M.~A.; SINGH, D.~K. \textbf{Shoplifting Dataset (2022) - CV Laboratory MNNIT Allahabad}. Mendeley Data, 2023.
+Acesso em: 25 mar. 2026.
+Dispon{\'\i}vel em: \url{https://data.mendeley.com/datasets/r3yjf35hzr/1}.}
+
+\bibitem[Arnab et al. 2021]{vivit}
+\abntrefinfo{Arnab et al.}{ARNAB et al.}{2021}
+{ARNAB, A.; DEHGHANI, M.; HEIGOLD, G.; SUN, C.; LU{\v{C}}I{\'C}, M.; SCHMID, C. Vivit: A video vision transformer. In:  \textbf{Proceedings of the IEEE/CVF international conference on computer vision}. [S.l.: s.n.], 2021. p. 6836--6846.}
+
+\bibitem[{Associação Brasileira de Prevenção de Perdas} e {KPMG} 2024]{abrappe2024}
+\abntrefinfo{{Associação Brasileira de Prevenção de Perdas} e {KPMG}}{{Associação Brasileira de Prevenção de Perdas}; {KPMG}}{2024}
+{{Associação Brasileira de Prevenção de Perdas}; {KPMG}. \textbf{Pesquisa Abrappe de Perdas no Varejo Brasileiro 2024}. São Paulo, Brasil: [s.n.], 2024.
+Acesso em: 15 mar. 2026.
+Dispon{\'\i}vel em: \url{https://kpmg.com/br/pt/insights/2024/11/pesquisa-abrappe-2024.html}.}
+
+\bibitem[Bertasius, Wang e Torresani 2021]{timesformer}
+\abntrefinfo{Bertasius, Wang e Torresani}{BERTASIUS; WANG; TORRESANI}{2021}
+{BERTASIUS, G.; WANG, H.; TORRESANI, L. Is space-time attention all you need for video understanding? In:  \textbf{Icml}. [S.l.: s.n.], 2021. v.~2, n.~3, p.~4.}
+
+\bibitem[Carreira e Zisserman 2017]{i3d}
+\abntrefinfo{Carreira e Zisserman}{CARREIRA; ZISSERMAN}{2017}
+{CARREIRA, J.; ZISSERMAN, A. Quo vadis, action recognition? {A} new model and the kinetics dataset.
+\textbf{CoRR}, abs/1705.07750, 2017.
+Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1705.07750}.}
+
+\bibitem[Castro e Braga 2011]{desbal}
+\abntrefinfo{Castro e Braga}{CASTRO; BRAGA}{2011}
+{CASTRO, C. L.~d.; BRAGA, A.~P. Aprendizado supervisionado com conjuntos de dados desbalanceados.
+\textbf{Sba: Controle \& Automa{\c{c}}{\~a}o Sociedade Brasileira de Automatica}, SciELO Brasil, v.~22, p. 441--466, 2011.}
+
+\bibitem[Chen 2021]{supervised}
+\abntrefinfo{Chen}{CHEN}{2021}
+{CHEN, L.-P. Supervised learning for binary classification on us adult income.
+\textbf{Journal of Modeling and Optimization}, v.~13, n.~2, p. 80--91, 2021.}
+
+\bibitem[Chollet 2021]{dlpython}
+\abntrefinfo{Chollet}{CHOLLET}{2021}
+{CHOLLET, F. \textbf{Deep Learning with Python, Second Edition}. Manning, 2021.
+ISBN 9781617296864. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=XHpKEAAAQBAJ}.}
+
+\bibitem[Cordeiro et al. 2020]{azevedo}
+\abntrefinfo{Cordeiro et al.}{CORDEIRO et al.}{2020}
+{CORDEIRO, G.~A.; GROCKOTZKI, G.; AZEVEDO, I.~J. de; MANTOVANI, J.; SANTOS, M.~H. da S.; PONCIO, R.~V.; MENDES, C.~M. Detec{\c{c}}{\~a}o de roubo de computadores em laborat{\'o}rio usando vis{\~a}o computacional.
+\textbf{Anais do Computer on the Beach}, v.~11, p. 054--055, 2020.}
+
+\bibitem[Costa 2019]{representation}
+\abntrefinfo{Costa}{COSTA}{2019}
+{COSTA, G. d. B. P.~d.
+\textbf{Representation learning of spatio-temporal features from video}.
+Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2019.}
+
+\bibitem[Deng et al. 2009]{deng2009imagenet}
+\abntrefinfo{Deng et al.}{DENG et al.}{2009}
+{DENG, J.; DONG, W.; SOCHER, R.; LI, L.-J.; LI, K.; FEI-FEI, L. Imagenet: A large-scale hierarchical image database. In:  IEEE. \textbf{2009 IEEE conference on computer vision and pattern recognition}. [S.l.], 2009. p. 248--255.}
+
+\bibitem[{Fast Forward Labs} 2022]{video_conv}
+\abntrefinfo{{Fast Forward Labs}}{{Fast Forward Labs}}{2022}
+{{Fast Forward Labs}. \textbf{Why and How Convolutions Work for Video Classification}. 2022.
+Acesso em: 23 mar. 2026.
+Dispon{\'\i}vel em: \url{https://blog.fastforwardlabs.com/2022/01/31/why-and-how-convolutions-work-for-video-classification.html}.}
+
+\bibitem[{GeeksforGeeks} 2024]{gfg_finetuning}
+\abntrefinfo{{GeeksforGeeks}}{{GeeksforGeeks}}{2024}
+{{GeeksforGeeks}. \textbf{What is Fine-Tuning ?} 2024.
+Acesso em: 01 abr. 2026.
+Dispon{\'\i}vel em: \url{https://www.geeksforgeeks.org/deep-learning/what-is-fine-tuning/}.}
+
+\bibitem[Goodfellow, Bengio e Courville 2016]{goodfellow}
+\abntrefinfo{Goodfellow, Bengio e Courville}{GOODFELLOW; BENGIO; COURVILLE}{2016}
+{GOODFELLOW, I.; BENGIO, Y.; COURVILLE, A. \textbf{Deep Learning}. [S.l.]: MIT Press, 2016. \url{http://www.deeplearningbook.org}.}
+
+\bibitem[Goyal et al. 2017]{goyal2017something}
+\abntrefinfo{Goyal et al.}{GOYAL et al.}{2017}
+{GOYAL, R.; KAHOU, S. E.; MICHALSKI, V.; MATERZYNSKA, J.; WESTPHAL, S.; KIM, H.; HAENEL, V.; FRUEND, I.; YIANILOS, P.; MUELLER-FREITAG, M. et al. The" something something" video database for learning and evaluating visual common sense. In:  \textbf{Proceedings of the IEEE international conference on computer vision}. [S.l.: s.n.], 2017. p. 5842--5850.}
+
+\bibitem[Grandini, Bagli e Visani 2020]{metrics}
+\abntrefinfo{Grandini, Bagli e Visani}{GRANDINI; BAGLI; VISANI}{2020}
+{GRANDINI, M.; BAGLI, E.; VISANI, G. \textbf{Metrics for Multi-Class Classification: an Overview}. 2020.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2008.05756}.}
+
+\bibitem[Grossberger 2021]{efforts}
+\abntrefinfo{Grossberger}{GROSSBERGER}{2021}
+{GROSSBERGER, K.~J. Retail security: Use of security guards. In:  \textbf{Encyclopedia of Security and Emergency Management}. [S.l.]: Springer, 2021. p. 839--846.}
+
+\bibitem[Hervas 2019]{dcsass}
+\abntrefinfo{Hervas}{HERVAS}{2019}
+{HERVAS, M. \textbf{DCSASS Dataset}. Kaggle, 2019.
+Acesso em: 25 mar. 2026.
+Dispon{\'\i}vel em: \url{https://www.kaggle.com/datasets/mateohervas/dcsass-dataset}.}
+
+\bibitem[Hisham 2024]{shoplifting_20}
+\abntrefinfo{Hisham}{HISHAM}{2024}
+{HISHAM, M. \textbf{Shoplifting dataset 2.0 (4 labels)}. Kaggle, 2024.
+Acesso em: 25 mar. 2026.
+Dispon{\'\i}vel em: \url{https://www.kaggle.com/datasets/mohamedhisham20/shoplifting-dataset-2-0-4-labels}.}
+
+\bibitem[Huang et al. 2018]{quiral}
+\abntrefinfo{Huang et al.}{HUANG et al.}{2018}
+{HUANG, D.-A.; RAMANATHAN, V.; MAHAJAN, D.; TORRESANI, L.; PALURI, M.; FEI-FEI, L.; NIEBLES, J.~C. What makes a video a video: Analyzing temporal information in video understanding models and datasets. In:  \textbf{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}. [S.l.: s.n.], 2018. p. 7366--7375.}
+
+\bibitem[Huang, Guo e Gao 2020]{rnc_3d}
+\abntrefinfo{Huang, Guo e Gao}{HUANG; GUO; GAO}{2020}
+{HUANG, Y.; GUO, Y.; GAO, C. Efficient parallel inflated 3d convolution architecture for action recognition.
+\textbf{IEEE Access}, IEEE, v.~8, p. 45753--45765, 2020.}
+
+\bibitem[{IBM} 2024]{ibm}
+\abntrefinfo{{IBM}}{{IBM}}{2024}
+{{IBM}. \textbf{What is Supervised Learning?} 2024.
+Acesso em: 20 mar. 2026.
+Dispon{\'\i}vel em: \url{https://www.ibm.com/think/topics/supervised-learning}.}
+
+\bibitem[{infoDiagram} 2024]{infodiagram_auc_roc}
+\abntrefinfo{{infoDiagram}}{{infoDiagram}}{2024}
+{{infoDiagram}. \textbf{AUC ROC Curve - Classifier Model Quality Measure}. 2024.
+Acesso em: 01 abr. 2026.
+Dispon{\'\i}vel em: \url{https://www.infodiagram.com/slides/auc-roc-curve-classifier-model-quality-measure}.}
+
+\bibitem[Johnson e Khoshgoftaar 2019]{imbalanced}
+\abntrefinfo{Johnson e Khoshgoftaar}{JOHNSON; KHOSHGOFTAAR}{2019}
+{JOHNSON, J.~M.; KHOSHGOFTAAR, T.~M. Survey on deep learning with class imbalance.
+\textbf{Journal of big data}, Springer, v.~6, n.~1, p.~27, 2019.}
+
+\bibitem[Kay et al. 2017]{kay2017kinetics}
+\abntrefinfo{Kay et al.}{KAY et al.}{2017}
+{KAY, W.; CARREIRA, J.; SIMONYAN, K.; ZHANG, B.; HILLIER, C.; VIJAYANARASIMHAN, S.; VIOLA, F.; GREEN, T.; BACK, T.; NATSEV, P. et al. The kinetics human action video dataset.
+\textbf{arXiv preprint arXiv:1705.06950}, 2017.}
+
+\bibitem[Leng et al. 2023]{3dcnn_img}
+\abntrefinfo{Leng et al.}{LENG et al.}{2023}
+{LENG, C.; DING, Q.; WU, C.; CHEN, A.; WANG, H.; WU, H. Bdnet: a method based on forward and backward convolutional networks for action recognition in videos.
+\textbf{The Visual Computer}, v.~40, p. 1--15, 10 2023.}
+
+\bibitem[Maur{\'\i}cio, Domingues e Bernardino 2023]{comparing}
+\abntrefinfo{Maur{\'\i}cio, Domingues e Bernardino}{MAUR{\'I}CIO; DOMINGUES; BERNARDINO}{2023}
+{MAUR{\'I}CIO, J.; DOMINGUES, I.; BERNARDINO, J. Comparing vision transformers and convolutional neural networks for image classification: A literature review.
+\textbf{Applied Sciences}, MDPI, v.~13, n.~9, p.~5521, 2023.}
+
+\bibitem[Mitchell 1997]{mitchell}
+\abntrefinfo{Mitchell}{MITCHELL}{1997}
+{MITCHELL, T.~M. \textbf{Machine learning}. [S.l.]: McGraw-hill New York, 1997. v.~1.}
+
+\bibitem[Mohri, Rostamizadeh e Talwalkar 2012]{found}
+\abntrefinfo{Mohri, Rostamizadeh e Talwalkar}{MOHRI; ROSTAMIZADEH; TALWALKAR}{2012}
+{MOHRI, M.; ROSTAMIZADEH, A.; TALWALKAR, A. \textbf{Foundations of Machine Learning}. MIT Press, 2012.  (Adaptive Computation and Machine Learning series).
+ISBN 9780262018258. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=maz6AQAAQBAJ}.}
+
+\bibitem[Muneer et al. 2023]{muneer}
+\abntrefinfo{Muneer et al.}{MUNEER et al.}{2023}
+{MUNEER, I.; SADDIQUE, M.; HABIB, Z.; MOHAMED, H.~G. Shoplifting detection using hybrid neural network cnn-bilsmt and development of benchmark dataset.
+\textbf{Applied Sciences}, MDPI, v.~13, n.~14, p.~8341, 2023.}
+
+\bibitem[N{\"a}sholm, Rohlfing e Sauer 2014]{blind}
+\abntrefinfo{N{\"a}sholm, Rohlfing e Sauer}{N{\"A}SHOLM; ROHLFING; SAUER}{2014}
+{N{\"A}SHOLM, E.; ROHLFING, S.; SAUER, J.~D. Pirate stealth or inattentional blindness? the effects of target relevance and sustained attention on security monitoring for experienced and na{\"\i}ve operators.
+\textbf{PLoS One}, Public Library of Science San Francisco, USA, v.~9, n.~1, p. e86157, 2014.}
+
+\bibitem[{National Retail Federation} e {Loss Prevention Research Council} 2024]{nrf}
+\abntrefinfo{{National Retail Federation} e {Loss Prevention Research Council}}{{National Retail Federation}; {Loss Prevention Research Council}}{2024}
+{{National Retail Federation}; {Loss Prevention Research Council}. \textbf{The Impact of Retail Theft \& Violence}. 2024.
+Acesso em: 2026-03-19.
+Dispon{\'\i}vel em: \url{https://nrf.com/research/the-impact-of-retail-theft-violence-2024}.}
+
+\bibitem[Pan e Yang 2009]{pan2010survey}
+\abntrefinfo{Pan e Yang}{PAN; YANG}{2009}
+{PAN, S.~J.; YANG, Q. A survey on transfer learning.
+\textbf{IEEE Transactions on knowledge and data engineering}, IEEE, v.~22, n.~10, p. 1345--1359, 2009.}
+
+\bibitem[Powers 2020]{f2}
+\abntrefinfo{Powers}{POWERS}{2020}
+{POWERS, D.~M. Evaluation: from precision, recall and f-measure to roc, informedness, markedness and correlation.
+\textbf{arXiv preprint arXiv:2010.16061}, 2020.}
+
+\bibitem[Prabhakar et al. 2024]{vitmetrics}
+\abntrefinfo{Prabhakar et al.}{PRABHAKAR et al.}{2024}
+{PRABHAKAR, C. et al. Vithar: Vision transformers for human action recognition in videos. In:  \textbf{2024 Fourth International Conference on Multimedia Processing, Communication \& Information Technology (MPCIT)}. [S.l.: s.n.], 2024. p. 358--363.}
+
+\bibitem[Rahangdale e Kokate 2016]{Rahangdale}
+\abntrefinfo{Rahangdale e Kokate}{RAHANGDALE; KOKATE}{2016}
+{RAHANGDALE, K.; KOKATE, M. Event detection using background subtraction for surveillance systems.
+\textbf{International Research Journal of Engineering and Technology}, v.~3, n.~01, p. 1300--1304, 2016.}
+
+\bibitem[Rashvand et al. 2025]{poselift}
+\abntrefinfo{Rashvand et al.}{RASHVAND et al.}{2025}
+{RASHVAND, N.; NOGHRE, G.~A.; PAZHO, A.~D.; YAO, S.; TABKHI, H. Exploring pose-based anomaly detection for retail security: A real-world shoplifting dataset and benchmark. In:  \textbf{Proceedings of the Winter Conference on Applications of Computer Vision}. [S.l.: s.n.], 2025. p. 1123--1131.}
+
+\bibitem[Russell e Norvig 2010]{ai-modern}
+\abntrefinfo{Russell e Norvig}{RUSSELL; NORVIG}{2010}
+{RUSSELL, S.; NORVIG, P. \textbf{Artificial Intelligence: A Modern Approach}. 3. ed. [S.l.]: Prentice Hall, 2010.}
+
+\bibitem[Schmucker 2024]{cnn_image}
+\abntrefinfo{Schmucker}{SCHMUCKER}{2024}
+{SCHMUCKER, P.
+\textbf{Evaluating defense mechanisms against universal adversarial perturbations for convolutional neural networks}.
+Tese (Doutorado) --- Ruhr University Bochum, 2024.}
+
+\bibitem[Simons e Chabris 1999]{gorila}
+\abntrefinfo{Simons e Chabris}{SIMONS; CHABRIS}{1999}
+{SIMONS, D.~J.; CHABRIS, C.~F. Gorillas in our midst: Sustained inattentional blindness for dynamic events.
+\textbf{perception}, SAGE Publications Sage UK: London, England, v.~28, n.~9, p. 1059--1074, 1999.}
+
+\bibitem[Sultani, Chen e Shah 2018]{sultani}
+\abntrefinfo{Sultani, Chen e Shah}{SULTANI; CHEN; SHAH}{2018}
+{SULTANI, W.; CHEN, C.; SHAH, M. Real-world anomaly detection in surveillance videos. In:  \textbf{2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition}. [S.l.: s.n.], 2018. p. 6479--6488.}
+
+\bibitem[Szeliski 2022]{vision}
+\abntrefinfo{Szeliski}{SZELISKI}{2022}
+{SZELISKI, R. \textbf{Computer vision: algorithms and applications}. [S.l.]: Springer Nature, 2022.}
+
+\bibitem[Tajbakhsh et al. 2016]{tajbakhsh2016convolutional}
+\abntrefinfo{Tajbakhsh et al.}{TAJBAKHSH et al.}{2016}
+{TAJBAKHSH, N.; SHIN, J.~Y.; GURUDU, S.~R.; HURST, R.~T.; KENDALL, C.~B.; LAWRENCE, M.~B.; TAJBAKHSH, A.; LIANG, J. Convolutional neural networks for medical image analysis: Full training or fine tuning?
+\textbf{IEEE transactions on medical imaging}, IEEE, v.~35, n.~5, p. 1299--1312, 2016.}
+
+\bibitem[Takahashi et al. 2024]{comparing2}
+\abntrefinfo{Takahashi et al.}{TAKAHASHI et al.}{2024}
+{TAKAHASHI, S.; SAKAGUCHI, Y.; KOUNO, N.; TAKASAWA, K.; ISHIZU, K.; AKAGI, Y.; AOYAMA, R.; TERAYA, N.; BOLATKAN, A.; SHINKAI, N. et al. Comparison of vision transformers and convolutional neural networks in medical image analysis: a systematic review.
+\textbf{Journal of Medical Systems}, Springer, v.~48, n.~1, p.~84, 2024.}
+
+\bibitem[Vaswani et al. 2017]{attentionall}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A.; SHAZEER, N.; PARMAR, N.; USZKOREIT, J.; JONES, L.; GOMEZ, A.~N.; KAISER, {\L}.; POLOSUKHIN, I. Attention is all you need.
+\textbf{Advances in neural information processing systems}, v.~30, 2017.}
+
+\bibitem[Yosinski et al. 2014]{yosinski2014how}
+\abntrefinfo{Yosinski et al.}{YOSINSKI et al.}{2014}
+{YOSINSKI, J.; CLUNE, J.; BENGIO, Y.; LIPSON, H. \textbf{How transferable are features in deep neural networks?} 2014.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/1411.1792}.}
+
+\bibitem[Zhang et al. 2023]{vit_img}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2023}
+{ZHANG, A.; LIPTON, Z.~C.; LI, M.; SMOLA, A.~J. \textbf{Dive into Deep Learning}. [S.l.]: Cambridge University Press, 2023. \url{https://D2L.ai}.}
+
+\end{thebibliography}

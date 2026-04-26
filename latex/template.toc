@@ -1,0 +1,48 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{9}{chapter.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Aprendizado Supervisionado e Classificação Binária}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Análise de Imagens}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Redes Neurais Convolucionais}{16}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Transformadores de Visão}{17}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Análise de Vídeos}{18}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Arquiteturas para Análise de Vídeos}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}\textit {Inflated 3D ConvNet}}{20}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}TimeSFormer}{21}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}\textit {Transfer Learning} e \textit {fine-tuning}}{22}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Métricas e Função de Perda}{23}{section.2.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Descrição do Banco de Dados}}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Construção do conjunto de dados}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Representação e Pré-processamento}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Aumento de Banco de Dados}{30}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Divisão do conjunto de dados}{31}{section.3.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados do Treinamento}}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Configuração dos Experimentos}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Preparação do Modelo I3D}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Preparação do Modelo TimeSFormer}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Interpolação dos \textit {Time Embeddings}}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Taxa de Aprendizado e Ausência de \textit {Batch Normalization}}{35}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Comparação da Dimensão dos Treinamentos}{36}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Dinâmica de Treinamento e Convergência}{36}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Evolução das Métricas na Validação}{37}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Avaliação Global e Seleção de Modelos}{39}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Desempenho no Conjunto de Teste}{39}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Eficiência}{42}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Síntese dos Resultados}{43}{section.4.10}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Avaliação em Vídeos Reais}}{45}{chapter.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Conclusões}}{46}{chapter.6}%
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{47}{section*.11}%

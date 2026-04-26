@@ -47,15 +47,15 @@ GPU_COST_USD_PER_HOUR = 0.412  # RTX 5090 cloud rental rate
 # Helpers
 # ──────────────────────────────────────────────────────────────────────
 I3D_DISPLAY_NAMES = {
-    "aug_full_unfreeze_rgb_only": "I3D Full / RGB",
-    "aug_full_unfreeze_rgb_optical": "I3D Full / RGB+Fluxo",
+    "aug_full_unfreeze_rgb_only": "I3D Completo / RGB",
+    "aug_full_unfreeze_rgb_optical": "I3D Completo / RGB+Fluxo",
     "aug_head_unfreeze_rgb_only": "I3D Cabeça / RGB",
     "aug_head_unfreeze_rgb_optical": "I3D Cabeça / RGB+Fluxo",
 }
 
 I3D_SHORT_NAMES = {
-    "aug_full_unfreeze_rgb_only": "Full / RGB",
-    "aug_full_unfreeze_rgb_optical": "Full / RGB+Fluxo",
+    "aug_full_unfreeze_rgb_only": "Completo / RGB",
+    "aug_full_unfreeze_rgb_optical": "Completo / RGB+Fluxo",
     "aug_head_unfreeze_rgb_only": "Cabeça / RGB",
     "aug_head_unfreeze_rgb_optical": "Cabeça / RGB+Fluxo",
 }
@@ -318,8 +318,8 @@ def plot_i3d_training_loss(i3d_exps: list[I3DExperiment], out_dir: Path):
             linewidth=1.5,
         )
     ax.set_xlabel("Época")
-    ax.set_ylabel("Loss de Treinamento")
-    ax.set_title("I3D — Curva de Loss no Treinamento")
+    ax.set_ylabel("Perda")
+    ax.set_title("I3D — Curva de Perda no Treinamento")
     ax.legend()
     ax.grid(True, alpha=0.3)
     ax.set_xlim(1, 70)
@@ -329,17 +329,17 @@ def plot_i3d_training_loss(i3d_exps: list[I3DExperiment], out_dir: Path):
 
 
 def plot_ts_training_loss(ts_exps: list[TSExperiment], out_dir: Path):
-    # Agrupar: 2 linhas (K400, SSv2) × 3 colunas (8f, 32f, 64f)
-    fig, axes = plt.subplots(2, 3, figsize=(14, 8), sharex=False, sharey=False)
-    fig.suptitle("TimeSformer — Curva de Loss no Treinamento", fontsize=14, y=1.02)
+    # Agrupar: 3 linhas (8f, 32f, 64f) × 2 colunas (K400, SSv2)
+    fig, axes = plt.subplots(3, 2, figsize=(10, 12), sharex=False, sharey=False)
+    fig.suptitle("TimeSformer — Curva de Perda no Treinamento", fontsize=14, y=1.02)
 
     pretrained_order = ["k400", "ssv2"]
     pretrained_labels = {"k400": "K400", "ssv2": "SSv2"}
     frame_order = ["8", "32", "64"]
     colors = {"Completo": "#1f77b4", "Cabeça": "#d62728"}
 
-    for row, pt in enumerate(pretrained_order):
-        for col, nf in enumerate(frame_order):
+    for row, nf in enumerate(frame_order):
+        for col, pt in enumerate(pretrained_order):
             ax = axes[row][col]
             for exp in ts_exps:
                 if pt not in exp.name:
@@ -359,9 +359,9 @@ def plot_ts_training_loss(ts_exps: list[TSExperiment], out_dir: Path):
                     linewidth=1.0,
                     alpha=0.8,
                 )
-            ax.set_title(f"{pretrained_labels[pt]} — {nf} frames")
+            ax.set_title(f"{pretrained_labels[pt]} — {nf} Quadros")
             ax.set_xlabel("Época")
-            ax.set_ylabel("Loss")
+            ax.set_ylabel("Perda")
             ax.legend(fontsize=7)
             ax.grid(True, alpha=0.3)
 
@@ -382,8 +382,14 @@ def plot_i3d_validation_metrics(i3d_exps: list[I3DExperiment], out_dir: Path):
     ]
     colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
 
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5))
+    fig = plt.figure(figsize=(12, 8))
     fig.suptitle("I3D — Métricas de Validação por Época", fontsize=14, y=1.02)
+
+    # Linha 1: 2 gráficos; Linha 2: 1 gráfico centralizado
+    ax0 = fig.add_subplot(2, 2, 1)
+    ax1 = fig.add_subplot(2, 2, 2)
+    ax2 = fig.add_subplot(2, 2, (3, 4))
+    axes = [ax0, ax1, ax2]
 
     for ax, (col, label) in zip(axes, metrics):
         for i, exp in enumerate(i3d_exps):
@@ -449,7 +455,7 @@ def plot_ts_validation_metrics(ts_exps: list[TSExperiment], out_dir: Path):
                         marker=".",
                         markersize=3,
                     )
-                ax.set_title(f"{pretrained_labels[pt]} — {nf} frames")
+                ax.set_title(f"{pretrained_labels[pt]} — {nf} Quadros")
                 ax.set_xlabel("Época")
                 ax.set_ylabel(metric_label)
                 ax.legend(fontsize=7)
@@ -586,17 +592,25 @@ def plot_auc_comparison_bar(
         aucs.append(exp.best_auc)
         model_colors.append("#ff7f0e")
 
+    # Identificar o melhor de cada modelo
+    best_i3d_idx = max(range(len(i3d_exps)), key=lambda i: i3d_exps[i].best_auc)
+    best_ts_idx = max(range(len(ts_exps)), key=lambda i: ts_exps[i].best_auc)
+    # índices globais na lista concatenada
+    best_indices = {best_i3d_idx, len(i3d_exps) + best_ts_idx}
+
     fig, ax = plt.subplots(figsize=(12, 6))
     bars = ax.barh(range(len(names)), aucs, color=model_colors, edgecolor="white", height=0.7)
 
     # Adicionar valores nas barras
-    for bar, auc in zip(bars, aucs):
+    for idx, (bar, auc) in enumerate(zip(bars, aucs)):
+        label = f"{auc:.3f} *" if idx in best_indices else f"{auc:.3f}"
         ax.text(
             bar.get_width() + 0.005,
             bar.get_y() + bar.get_height() / 2,
-            f"{auc:.3f}",
+            label,
             va="center",
             fontsize=8,
+            fontweight="bold" if idx in best_indices else "normal",
         )
 
     ax.set_yticks(range(len(names)))
