@@ -120,6 +120,7 @@
 \usepackage{multirow}
 \usepackage{amssymb}
 \usepackage{makecell}
+\usepackage{amsmath}
 % ---
 % Pacotes de citações
 % ---

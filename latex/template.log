@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.25)  26 APR 2026 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.25)  29 APR 2026 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -659,13 +659,77 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen198
 \c@nlinenum=\count348
 \TeXr@lab=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip262
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen199
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen256
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count349
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count350
+\leftroot@=\count351
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count352
+\DOTSCASE@=\count353
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box58
+\strutbox@=\box59
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen257
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count354
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count355
+\dotsspace@=\muskip17
+\c@parentequation=\count356
+\dspbrk@lvl=\count357
+\tag@help=\toks37
+\row@=\count358
+\column@=\count359
+\maxfields@=\count360
+\andhelp@=\toks38
+\eqnshift@=\dimen258
+\alignsep@=\dimen259
+\tagshift@=\dimen260
+\tagwidth@=\dimen261
+\totwidth@=\dimen262
+\lineht@=\dimen263
+\@envbody=\toks39
+\multlinegap=\skip263
+\multlinetaggap=\skip264
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
  (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip262
-\ABCIauxlen=\skip263
-\c@ABCIaux=\count349
-\c@ABCImax=\count350
+\minimumbiblabelwidth=\skip265
+\ABCIauxlen=\skip266
+\c@ABCIaux=\count361
+\c@ABCImax=\count362
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -673,13 +737,13 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip264
+\biblabelsep=\skip267
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks36
+\ABCItoken=\toks41
 )
-Package color Info: Redefining color blue on input line 175.
-Package hyperref Info: Option `colorlinks' set `true' on input line 191.
+Package color Info: Redefining color blue on input line 176.
+Package hyperref Info: Option `colorlinks' set `true' on input line 192.
 )
 \template@idxfile=\write5
 \openout5 = `template.idx'.
@@ -708,21 +772,21 @@ LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 Package hyperref Info: Link coloring ON on input line 34.
-\myptabbox=\box58
-\myptabboxwidth=\skip265
+\myptabbox=\box60
+\myptabboxwidth=\skip268
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
-\scratchdimen=\dimen199
-\scratchbox=\box59
-\nofMPsegments=\count352
-\nofMParguments=\count353
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count354
-\MPscratchDim=\dimen256
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count363
+\scratchdimen=\dimen264
+\scratchbox=\box61
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen265
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -781,11 +845,11 @@ l.43
 
 ] [3
 
-] (./template.lof) [4
+] (./template.lof [4
 
-] (./template.lot) [5
+]) [5] (./template.lot) [6
 
-] [6
+] [7
 
 
 ] (./template.toc
@@ -793,9 +857,9 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 18.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 20.
- [7
+ [8
 
-]) [8] [9
+]) [9] [10
 
 
 ]
@@ -805,96 +869,96 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 222.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 222.
- [10] [11] [12] [13]
-<figuras/venn-ai.png, id=291, 567.11874pt x 567.11874pt>
+ [11] [12] [13] [14]
+<figuras/venn-ai.png, id=341, 567.11874pt x 567.11874pt>
 File: figuras/venn-ai.png Graphic file (type png)
 <use figuras/venn-ai.png>
 Package pdftex.def Info: figuras/venn-ai.png  used on input line 267.
 (pdftex.def)             Requested size: 181.99722pt x 181.99226pt.
- [14
+ [15
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [15{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/venn-ai.png (PNG copy)>] [16]
-<figuras/cnn.png, id=335, 2180.145pt x 787.94376pt>
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [16{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/venn-ai.png (PNG copy)>] [17]
+<figuras/cnn.png, id=384, 2180.145pt x 787.94376pt>
 File: figuras/cnn.png Graphic file (type png)
 <use figuras/cnn.png>
 Package pdftex.def Info: figuras/cnn.png  used on input line 300.
 (pdftex.def)             Requested size: 455.0pt x 164.43909pt.
-<figuras/vit.png, id=345, 1405.25pt x 1126.2075pt>
+<figuras/vit.png, id=394, 1405.25pt x 1126.2075pt>
 File: figuras/vit.png Graphic file (type png)
 <use figuras/vit.png>
 Package pdftex.def Info: figuras/vit.png  used on input line 314.
 (pdftex.def)             Requested size: 397.41272pt x 318.49861pt.
- [17 <./figuras/cnn.png (PNG copy)>] [18 <./figuras/vit.png>] [19]
+ [18 <./figuras/cnn.png (PNG copy)>] [19 <./figuras/vit.png>] [20]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 335.
-<figuras/3d-vs-2d.png, id=393, 853.1875pt x 1064.97874pt>
+<figuras/3d-vs-2d.png, id=442, 853.1875pt x 1064.97874pt>
 File: figuras/3d-vs-2d.png Graphic file (type png)
 <use figuras/3d-vs-2d.png>
 Package pdftex.def Info: figuras/3d-vs-2d.png  used on input line 342.
 (pdftex.def)             Requested size: 236.92506pt x 295.74722pt.
- [20 <./figuras/3d-vs-2d.png>]
-<figuras/timesformer.png, id=408, 866.23625pt x 591.20876pt>
+ [21 <./figuras/3d-vs-2d.png>]
+<figuras/timesformer.png, id=457, 866.23625pt x 591.20876pt>
 File: figuras/timesformer.png Graphic file (type png)
 <use figuras/timesformer.png>
 Package pdftex.def Info: figuras/timesformer.png  used on input line 360.
 (pdftex.def)             Requested size: 359.98361pt x 245.69695pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 365.
- [21 <./figuras/timesformer.png (PNG copy)>] [22]
-<figuras/transfer-fine.png, id=448, 823.075pt x 368.37625pt>
+ [22 <./figuras/timesformer.png (PNG copy)>] [23]
+<figuras/transfer-fine.png, id=498, 823.075pt x 368.37625pt>
 File: figuras/transfer-fine.png Graphic file (type png)
 <use figuras/transfer-fine.png>
 Package pdftex.def Info: figuras/transfer-fine.png  used on input line 383.
 (pdftex.def)             Requested size: 355.81177pt x 159.25278pt.
- [23 <./figuras/transfer-fine.png (PNG copy)>] [24]
-<figuras/roc.png, id=476, 563.10374pt x 497.86pt>
+ [24 <./figuras/transfer-fine.png (PNG copy)>] [25]
+<figuras/roc.png, id=525, 563.10374pt x 497.86pt>
 File: figuras/roc.png Graphic file (type png)
 <use figuras/roc.png>
 Package pdftex.def Info: figuras/roc.png  used on input line 407.
 (pdftex.def)             Requested size: 257.321pt x 227.5pt.
- [25 <./figuras/roc.png (PNG copy)>]
-<figuras/mnnit.png, id=498, 1927.2pt x 1445.4pt>
+ [26 <./figuras/roc.png (PNG copy)>]
+<figuras/mnnit.png, id=547, 1927.2pt x 1445.4pt>
 File: figuras/mnnit.png Graphic file (type png)
 <use figuras/mnnit.png>
 Package pdftex.def Info: figuras/mnnit.png  used on input line 428.
 (pdftex.def)             Requested size: 455.0pt x 341.23495pt.
- [26
+ [27
 
 ]
-<figuras/shop20.png, id=504, 1589.94pt x 1300.86pt>
+<figuras/shop20.png, id=553, 1589.94pt x 1300.86pt>
 File: figuras/shop20.png Graphic file (type png)
 <use figuras/shop20.png>
 Package pdftex.def Info: figuras/shop20.png  used on input line 439.
 (pdftex.def)             Requested size: 455.0pt x 372.27737pt.
- [27 <./figuras/mnnit.png (PNG copy)>]
-<figuras/dcsass.png, id=510, 505.89pt x 505.89pt>
+ [28 <./figuras/mnnit.png (PNG copy)>]
+<figuras/dcsass.png, id=559, 505.89pt x 505.89pt>
 File: figuras/dcsass.png Graphic file (type png)
 <use figuras/dcsass.png>
 Package pdftex.def Info: figuras/dcsass.png  used on input line 449.
 (pdftex.def)             Requested size: 455.0pt x 455.01117pt.
- [28 <./figuras/shop20.png (PNG copy)>] [29 <./figuras/dcsass.png (PNG copy)>]
+ [29 <./figuras/shop20.png (PNG copy)>] [30 <./figuras/dcsass.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 469.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [30{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
-<figuras/dataaug.png, id=529, 875.52094pt x 520.94624pt>
+) [31{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+<figuras/dataaug.png, id=578, 875.52094pt x 520.94624pt>
 File: figuras/dataaug.png Graphic file (type png)
 <use figuras/dataaug.png>
 Package pdftex.def Info: figuras/dataaug.png  used on input line 478.
 (pdftex.def)             Requested size: 455.0pt x 270.73462pt.
- [31 <./figuras/dataaug.png (PNG copy)>] [32] [33
+ [32 <./figuras/dataaug.png (PNG copy)>] [33] [34
 
-] [34]
+] [35]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 607.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [35] [36]
-<figuras/i3d_training_loss.png, id=573, 512.03294pt x 319.4334pt>
+) [36] [37]
+<figuras/i3d_training_loss.png, id=623, 512.03294pt x 319.4334pt>
 File: figuras/i3d_training_loss.png Graphic file (type png)
 <use figuras/i3d_training_loss.png>
 Package pdftex.def Info: figuras/i3d_training_loss.png  used on input line 676.
 (pdftex.def)             Requested size: 283.72849pt x 177.0pt.
-<figuras/timesformer_training_loss.png, id=574, 722.7pt x 895.4253pt>
+<figuras/timesformer_training_loss.png, id=624, 722.7pt x 895.4253pt>
 File: figuras/timesformer_training_loss.png Graphic file (type png)
 <use figuras/timesformer_training_loss.png>
 Package pdftex.def Info: figuras/timesformer_training_loss.png  used on input line 680.
@@ -903,47 +967,114 @@ Package pdftex.def Info: figuras/timesformer_training_loss.png  used on input li
 
 LaTeX Warning: Float too large for page by 28.44568pt on input line 687.
 
-<figuras/i3d_validation_metrics.png, id=576, 866.87865pt x 600.5637pt>
+<figuras/i3d_validation_metrics.png, id=626, 866.87865pt x 600.5637pt>
 File: figuras/i3d_validation_metrics.png Graphic file (type png)
 <use figuras/i3d_validation_metrics.png>
 Package pdftex.def Info: figuras/i3d_validation_metrics.png  used on input line 699.
 (pdftex.def)             Requested size: 455.0pt x 315.21819pt.
-<figuras/timesformer_val_eval_accuracy.png, id=578, 1011.78pt x 600.5637pt>
+<figuras/timesformer_val_eval_accuracy.png, id=628, 1011.78pt x 600.5637pt>
 File: figuras/timesformer_val_eval_accuracy.png Graphic file (type png)
 <use figuras/timesformer_val_eval_accuracy.png>
 Package pdftex.def Info: figuras/timesformer_val_eval_accuracy.png  used on input line 715.
 (pdftex.def)             Requested size: 369.7675pt x 219.47827pt.
-<figuras/timesformer_val_eval_f1.png, id=579, 1011.78pt x 600.5637pt>
+<figuras/timesformer_val_eval_f1.png, id=629, 1011.78pt x 600.5637pt>
 File: figuras/timesformer_val_eval_f1.png Graphic file (type png)
 <use figuras/timesformer_val_eval_f1.png>
 Package pdftex.def Info: figuras/timesformer_val_eval_f1.png  used on input line 720.
 (pdftex.def)             Requested size: 369.7675pt x 219.47827pt.
-<figuras/timesformer_val_eval_auc_roc.png, id=580, 1011.78pt x 600.5637pt>
+<figuras/timesformer_val_eval_auc_roc.png, id=630, 1011.78pt x 600.5637pt>
 File: figuras/timesformer_val_eval_auc_roc.png Graphic file (type png)
 <use figuras/timesformer_val_eval_auc_roc.png>
 Package pdftex.def Info: figuras/timesformer_val_eval_auc_roc.png  used on input line 725.
 (pdftex.def)             Requested size: 369.7675pt x 219.47827pt.
-[37] [38 <./figuras/i3d_training_loss.png> <./figuras/timesformer_training_loss.png>]
-<figuras/auc_comparison_all.png, id=592, 867.24pt x 433.62pt>
+[38] [39 <./figuras/i3d_training_loss.png> <./figuras/timesformer_training_loss.png>]
+<figuras/auc_comparison_all.png, id=642, 867.24pt x 433.62pt>
 File: figuras/auc_comparison_all.png Graphic file (type png)
 <use figuras/auc_comparison_all.png>
 Package pdftex.def Info: figuras/auc_comparison_all.png  used on input line 739.
 (pdftex.def)             Requested size: 455.0pt x 227.50172pt.
- [39 <./figuras/i3d_validation_metrics.png>] [40 <./figuras/timesformer_val_eval_accuracy.png> <./figuras/timesformer_val_eval_f1.png> <./figuras/timesformer_val_eval_auc_roc.png>]
-<figuras/test_confusion_matrices.png, id=607, 722.7pt x 342.5598pt>
+ [40 <./figuras/i3d_validation_metrics.png>] [41 <./figuras/timesformer_val_eval_accuracy.png> <./figuras/timesformer_val_eval_f1.png> <./figuras/timesformer_val_eval_auc_roc.png>]
+<figuras/test_confusion_matrices.png, id=657, 722.7pt x 342.5598pt>
 File: figuras/test_confusion_matrices.png Graphic file (type png)
 <use figuras/test_confusion_matrices.png>
 Package pdftex.def Info: figuras/test_confusion_matrices.png  used on input line 770.
 (pdftex.def)             Requested size: 409.49722pt x 194.1007pt.
- [41 <./figuras/auc_comparison_all.png>] [42 <./figuras/test_confusion_matrices.png>] [43] [44] [45
+ [42 <./figuras/auc_comparison_all.png>] [43 <./figuras/test_confusion_matrices.png>] [44] [45]
+<figuras/janela_desliz.png, id=684, 1355.0625pt x 958.58125pt>
+File: figuras/janela_desliz.png Graphic file (type png)
+<use figuras/janela_desliz.png>
+Package pdftex.def Info: figuras/janela_desliz.png  used on input line 829.
+(pdftex.def)             Requested size: 364.00139pt x 257.48936pt.
+ [46
 
-] (./template.bbl [46
+] [47 <./figuras/janela_desliz.png>]
+Underfull \hbox (badness 1158) in paragraph at lines 871--871
+[][][]\T1/lmr/m/n/12 Curva de pro-ba-bi-li-dade do mo-delo Ti-meS-For-mer para o ví-deo \T1/lmr/m/it/12 furto-
+ []
+
+<figuras/furto-supermercado-ts.png, id=698, 722.7pt x 517.18219pt>
+File: figuras/furto-supermercado-ts.png Graphic file (type png)
+<use figuras/furto-supermercado-ts.png>
+Package pdftex.def Info: figuras/furto-supermercado-ts.png  used on input line 872.
+(pdftex.def)             Requested size: 455.0pt x 325.61343pt.
+<figuras/furto-tenis1-ts.png, id=699, 702.37407pt x 508.90125pt>
+File: figuras/furto-tenis1-ts.png Graphic file (type png)
+<use figuras/furto-tenis1-ts.png>
+Package pdftex.def Info: figuras/furto-tenis1-ts.png  used on input line 879.
+(pdftex.def)             Requested size: 455.0pt x 329.67923pt.
+<figuras/furto-tenis2-ts.png, id=700, 752.0597pt x 509.65407pt>
+File: figuras/furto-tenis2-ts.png Graphic file (type png)
+<use figuras/furto-tenis2-ts.png>
+Package pdftex.def Info: figuras/furto-tenis2-ts.png  used on input line 886.
+(pdftex.def)             Requested size: 455.0pt x 308.35332pt.
+<figuras/furto-celular-i3d.png, id=703, 877.77937pt x 571.38469pt>
+File: figuras/furto-celular-i3d.png Graphic file (type png)
+<use figuras/furto-celular-i3d.png>
+Package pdftex.def Info: figuras/furto-celular-i3d.png  used on input line 896.
+(pdftex.def)             Requested size: 455.0pt x 296.18013pt.
+<figuras/furto-pc-i3d.png, id=704, 877.77937pt x 562.35094pt>
+File: figuras/furto-pc-i3d.png Graphic file (type png)
+<use figuras/furto-pc-i3d.png>
+Package pdftex.def Info: figuras/furto-pc-i3d.png  used on input line 903.
+(pdftex.def)             Requested size: 455.0pt x 291.49745pt.
+<figuras/trechos-roupa.png, id=707, 810.02625pt x 684.30656pt>
+File: figuras/trechos-roupa.png Graphic file (type png)
+<use figuras/trechos-roupa.png>
+Package pdftex.def Info: figuras/trechos-roupa.png  used on input line 915.
+(pdftex.def)             Requested size: 318.47984pt x 269.04346pt.
+<figuras/trechos-shopping.png, id=708, 812.28468pt x 682.80093pt>
+File: figuras/trechos-shopping.png Graphic file (type png)
+<use figuras/trechos-shopping.png>
+Package pdftex.def Info: figuras/trechos-shopping.png  used on input line 923.
+(pdftex.def)             Requested size: 320.06189pt x 269.04346pt.
+[48]
+<figuras/furto-tenis1-i3d.png, id=717, 877.77937pt x 563.85657pt>
+File: figuras/furto-tenis1-i3d.png Graphic file (type png)
+<use figuras/furto-tenis1-i3d.png>
+Package pdftex.def Info: figuras/furto-tenis1-i3d.png  used on input line 933.
+(pdftex.def)             Requested size: 455.0pt x 292.2779pt.
+<figuras/furto-supermercado-i3d.png, id=718, 877.77937pt x 574.39594pt>
+File: figuras/furto-supermercado-i3d.png Graphic file (type png)
+<use figuras/furto-supermercado-i3d.png>
+Package pdftex.def Info: figuras/furto-supermercado-i3d.png  used on input line 940.
+(pdftex.def)             Requested size: 455.0pt x 297.74103pt.
+<figuras/furto-celular-ts.png, id=721, 877.77937pt x 571.38469pt>
+File: figuras/furto-celular-ts.png Graphic file (type png)
+<use figuras/furto-celular-ts.png>
+Package pdftex.def Info: figuras/furto-celular-ts.png  used on input line 949.
+(pdftex.def)             Requested size: 455.0pt x 296.18013pt.
+<figuras/furto-pc-ts.png, id=722, 877.77937pt x 571.38469pt>
+File: figuras/furto-pc-ts.png Graphic file (type png)
+<use figuras/furto-pc-ts.png>
+Package pdftex.def Info: figuras/furto-pc-ts.png  used on input line 956.
+(pdftex.def)             Requested size: 455.0pt x 296.18013pt.
+ [49 <./figuras/furto-supermercado-ts.png (PNG copy)>] [50 <./figuras/furto-tenis1-ts.png (PNG copy)>] [51 <./figuras/furto-tenis2-ts.png (PNG copy)>] [52 <./figuras/furto-celular-i3d.png (PNG copy)> <./figuras/furto-pc-i3d.png (PNG copy)>] [53 <./figuras/trechos-roupa.png (PNG copy)> <./figuras/trechos-shopping.png (PNG copy)>] [54 <./figuras/furto-tenis1-i3d.png (PNG copy)> <./figuras/furto-supermercado-i3d.png (PNG copy)>] [55 <./figuras/furto-celular-ts.png (PNG copy)> <./figuras/furto-pc-ts.png (PNG copy)>] (./template.bbl [56
 
 ]
 bibitemlist
-[47
+[57
 
-] [48] [49]) (./template.ind) [50]
+] [58] [59]) (./template.ind) [60]
 \tf@lof=\write6
 \openout6 = `template.lof'.
 
@@ -962,18 +1093,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17359 strings out of 474222
- 276449 string characters out of 5748733
- 1944975 words of memory out of 5000000
- 39087 multiletter control sequences out of 15000+600000
- 647880 words of font info for 92 fonts, out of 8000000 for 9000
+ 18157 strings out of 474222
+ 288574 string characters out of 5748733
+ 1945975 words of memory out of 5000000
+ 39834 multiletter control sequences out of 15000+600000
+ 659400 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,13n,121p,1469b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (51 pages, 13410233 bytes).
+ 113i,13n,121p,1469b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (61 pages, 17512931 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 792 compressed objects within 8 object streams
- 177 named destinations out of 1000 (max. 500000)
- 444 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1062 PDF objects out of 1200 (max. 8388607)
+ 909 compressed objects within 10 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 552 words of extra memory for PDF output out of 10000 (max. 10000000)
 

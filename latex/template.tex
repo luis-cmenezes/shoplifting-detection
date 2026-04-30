@@ -243,7 +243,7 @@ No Banco de Dados, descreve-se o processo de construção do conjunto de dados u
 
 Nos Resultados do Treinamento, são apresentados e discutidos os desempenhos de 16 configurações experimentais de \textit{fine-tuning} para as arquiteturas I3D e TimeSFormer. O capítulo demonstra empiricamente que o ajuste profundo de todos os pesos da rede é estritamente essencial para a convergência do aprendizado nesta tarefa. A análise compara o comportamento dos modelos nos conjuntos de validação e teste, evidenciando um claro compromisso entre custo computacional e capacidade de generalização. Enquanto o modelo I3D destaca-se pelo baixo tempo de inferência, o TimeSFormer alcança o melhor desempenho preditivo global, obtendo 100\% de precisão no conjunto de teste e demonstrando controle superior na redução de falsos positivos em cenários inéditos.
 
-Na Avaliação em Vídeos Reais, <preencher após finalizar>.
+Na Avaliação em Vídeos Reais, apresenta-se a aplicação dos melhores modelos de cada arquitetura em um cenário prático de monitoramento contínuo de fluxo de vídeo, utilizando uma abordagem de inferência por janela deslizante. O desempenho prático é avaliado sobre um conjunto inédito de sete vídeos reais de ocorrências variadas no varejo. A análise revela que o TimeSFormer demonstra maior seletividade e capacidade de sincronização com o exato momento da ocultação , embora sofra com latência em alguns casos. Em contrapartida, o modelo I3D destaca-se na detecção de ações abruptas , mas apresenta uma forte tendência à saturação de probabilidade e falsos positivos gerados pela manipulação legítima de produtos. Por fim, evidencia-se que ambas as arquiteturas compartilham uma limitação crítica: a falha na detecção diante de oclusões severas e movimentos corporais sutis.
 
 Por fim, em Conclusões, <preencher após finalizar>.
 
@@ -811,10 +811,163 @@ A condução e análise empírica dos 16 experimentos permite consolidar as segu
 \end{enumerate}
 
 %TCC:
-
-
 \chapter[Avaliação em Vídeos Reais]{Avaliação em Vídeos Reais}
-%TCC:
+Os experimentos apresentados no capítulo anterior foram realizados exclusivamente com amostras do conjunto de dados agregado. Embora esse procedimento permita o treinamento e a comparação controlada entre arquiteturas, as condições típicas de monitoramento reais não são reproduzidas, pois - na prática - o modelo processa um fluxo contínuo de vídeo com duração indefinida. É importante ressaltar que esse tipo de vídeo real não foi utilizado na etapa de treinamento, o que configura o cenário atual como um caso extremo de avaliação para a capacidade de generalização dos modelos treinados. Nesse contexto, a avaliação demanda uma estratégia de inferência diferente da utilizada no treinamento, em que cada entrada corresponde a um clipe de duração fixa com rótulo único. Para lidar com essa diferença, adota-se uma abordagem baseada em janela deslizante, com agregação temporal por quadro, descrita a seguir.
+
+\section[Metodologia de Inferência]{Metodologia de Inferência}
+
+Os vídeos de monitoramento real são primeiramente reamostrados com uma taxa uniforme de 25 quadros por segundo, taxa adotada durante o pré-processamento do conjunto de treinamento. Cada quadro é então redimensionado com preservação da proporção, o maior lado é escalado para 224 pixels e recortado centralmente para a resolução de entrada padrão de ambos os modelos $224 \times 224$ pixels.
+
+Sobre a sequência de quadros reamostrada aplica-se uma janela deslizante de tamanho fixo e passo $s = 8$ quadros. O tamanho da janela é mantido idêntico ao usado durante o treinamento de cada modelo: $W_{\text{I3D}} = 64$ quadros e $W_{\text{TS}} = 32$ quadros. A cada posição de janela, a subsequência extraída é encaminhada ao respectivo modelo, que produz uma probabilidade escalar $p \in [0, 1]$ associada à classe \textit{Shoplifting}.
+
+
+Em razão do passo $s < W$, janelas consecutivas se sobrepõem de forma que um quadro de índice $f$ pertence a mais de uma janela. Em vez de reportar predições por janela, que introduziriam descontinuidades temporais, opta-se por agregar as predições ao nível do quadro. A probabilidade atribuída ao quadro $f$ é a média aritmética das predições de todas as janelas que o contêm, como na \autoref{fig:janela_deslizante}, o resultado é uma curva de probabilidade contínua e de resolução temporal unitária, alinhada quadro a quadro com o vídeo original reamostrado. Um quadro é classificado como suspeito quando $\hat{p}(f)$ excede o limiar de decisão calibrado no conjunto de validação para cada modelo. Para o modelo I3D, utilizou-se o limiar que otimiza o desempenho global no conjunto de validação, resultando em $\tau_{\text{I3D}} = 0{,}7449$. Para o TimeSFormer, o limiar corresponde à fronteira natural do \textit{softmax} binário, $\tau_{\text{TS}} = 0{,}50$.
+
+\begin{figure}[!htbp]
+    \centering
+    \caption[Exemplo de aplicação da abordagem de janela deslizante sobre vídeo real.]{Exemplo de aplicação da abordagem de janela deslizante sobre vídeo real.}
+	\includegraphics[width=0.8\textwidth]{figuras/janela_desliz.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:janela_deslizante}
+\end{figure}
+
+\section[Conjunto de Vídeos Reais]{Conjunto de Vídeos Reais}
+
+Foram coletados sete vídeos reais de furtos em estabelecimentos varejistas, sem qualquer uso nas etapas de treinamento ou avaliação anteriores. Esses vídeos, obtidos de fontes públicas na internet, contemplam diferentes tipos de ocorrência em ambientes distintos. As principais características dos vídeos utilizados nesse capítulo encontram-se na \autoref{tab:real_videos}.
+
+\begin{table}[htbp]
+\centering
+\caption{Características dos vídeos reais de furto utilizados na avaliação.}
+\label{tab:real_videos}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllll}
+\toprule
+\textbf{Nome} & \textbf{Duração total (s)} & \textbf{Ambiente} & \textbf{Método de ocultação} \\
+\midrule
+furto-celular & 8 & Salão de beleza & Sem ocultação           \\
+furto-pc & 29 & Loja de roupas     & Mochila  \\
+furto-roupa & 33 & Loja de Roupas           & Bolsa             \\
+furto-supermercado & 16 & Supermercado & Bolsa           \\
+furto-shopping & 18 & Shopping       & Bolso             \\
+furto-tenis1 & 9 & Loja de Calçados       & Bolsa  \\
+furto-tenis2 & 7 & Loja de Calçados       & Bolsa  \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\section[Resultados]{Resultados}
+
+A análise das curvas de probabilidade geradas pela inferência em janela deslizante revela comportamentos distintos entre as duas arquiteturas. Enquanto o modelo I3D apresenta uma curva frequentemente saturada em patamares elevados, o TimeSFormer demonstra maior seletividade, reagindo de forma mais sensível aos eventos de interesse. Para ilustrar essas dinâmicas e justificar as classificações, os gráficos contínuos foram analisados em conjunto com os quadros originais dos vídeos, permitindo a verificação de como transformações visuais específicas na cena impactaram a confiança de cada modelo.
+
+\subsection[Casos de Sucesso]{Casos de Sucesso}
+
+Os casos de sucesso foram definidos pela capacidade do modelo em elevar a probabilidade de furto acima do limiar estabelecido sincronizadamente com a ação real de ocultação ou subtração.
+
+O modelo TimeSFormer obteve sucesso notável nos vídeos \textit{furto-supermercado}, \textit{furto-tenis1} e \textit{furto-tenis2}. Conforme ilustrado nas \autoref{fig:furto-supermercado-ts}, \autoref{fig:furto-tenis1-ts} e \autoref{fig:furto-tenis2-ts}, a curva de probabilidade do modelo mantém-se em níveis basais durante a fase de aproximação e interação normal do cliente com o produto. O pico da curva, que cruza o limiar de detecção, coincide com os quadros em que ocorre a ocultação efetiva do item, retornando à normalidade logo após a conclusão do movimento.
+
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-supermercado}.]{Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-supermercado}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-supermercado-ts.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-supermercado-ts}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-tenis1}.]{Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-tenis1}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-tenis1-ts.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-tenis1-ts}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-tenis2}.]{Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-tenis2}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-tenis2-ts.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-tenis2-ts}
+\end{figure}
+
+Por outro lado, o modelo I3D demonstrou um sucesso expressivo no vídeo \textit{furto-celular}. Neste cenário, a arquitetura apresentou alta precisão temporal, conforme demonstrado na \autoref{fig:furto-celular-i3d}. A avaliação quadro a quadro revela que o modelo classifica a sequência como suspeita estritamente no instante em que o indivíduo retira o aparelho da bancada de forma abrupta. Adicionalmente, no vídeo \textit{furto-pc}, o I3D obteve um sucesso parcial: embora tenha conseguido identificar um pico claro de probabilidade durante o ato do furto, o modelo manteve uma probabilidade residual persistentemente alta em trechos do vídeo onde nenhuma ação anômala ocorria, demonstrado na \autoref{fig:furto-pc-i3d}.
+
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo I3D para o vídeo \textit{furto-celular}.]{Curva de probabilidade do modelo I3D para o vídeo \textit{furto-celular}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-celular-i3d.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-celular-i3d}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo I3D para o vídeo \textit{furto-pc}.]{Curva de probabilidade do modelo I3D para o vídeo \textit{furto-pc}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-pc-i3d.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-pc-i3d}
+\end{figure}
+
+\subsection[Casos de Falha]{Casos de Falha}
+
+As falhas observadas evidenciam as limitações de generalização dos modelos frente a oclusões severas e ações de baixa magnitude visual. Os vídeos \textit{furto-roupa} e \textit{furto-shopping} representaram falhas totais para ambas as arquiteturas, com as probabilidades mantendo-se significativamente abaixo dos limiares de alarme durante todo o clipe. A análise visual desses casos sugere que o método de ocultação, como nas \autoref{fig:trechos-roupa} e \autoref{fig:trechos-shopping}, inibiu de forma contundente a extração das características espaço-temporais necessárias para a discriminação do ilícito.
+
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade dos modelo I3D e TimeSFormer para o vídeo \textit{furto-roupa}.]{Curva de probabilidade dos modelo I3D e TimeSFormer para o vídeo \textit{furto-roupa}.}
+	\includegraphics[height=0.38\textheight]{figuras/trechos-roupa.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:trechos-roupa}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade dos modelo I3D e TimeSFormer para o vídeo \textit{furto-shopping}.]{Curva de probabilidade dos modelo I3D e TimeSFormer para o vídeo \textit{furto-shopping}.}
+	\includegraphics[height=0.38\textheight]{figuras/trechos-shopping.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:trechos-shopping}
+\end{figure}
+
+O I3D exibiu uma clara tendência a falsos positivos e à total falta de precisão temporal nos vídeos \textit{furto-tenis1}, \textit{furto-tenis2} e \textit{furto-supermercado}. Nestes cenários, a curva de probabilidade permaneceu saturada em níveis próximos a $1,0$ durante praticamente toda a gravação. A análise dos quadros correspondentes, exemplificada na \autoref{fig:furto-tenis1-i3d}, mostra que a simples presença do indivíduo observando ou segurando o produto já mantém a rede em estado de alerta máximo. Essa saturação evidencia a incapacidade do modelo convolucional de distinguir entre a manipulação legítima e a ocultação intencional. No caso particular de \textit{furto-supermercado}, o modelo chegou a inverter a lógica, atribuindo maior confiança de furto a seções de comportamento normal do que ao momento exato da ocultação, demonstrando na \autoref{fig:furto-supermercado-i3d}.
+
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo I3D para o vídeo \textit{furto-tenis1}.]{Curva de probabilidade do modelo I3D para o vídeo \textit{furto-tenis1}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-tenis1-i3d.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-tenis1-i3d}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo I3D para o vídeo \textit{furto-supermercado}.]{Curva de probabilidade do modelo I3D para o vídeo \textit{furto-supermercado}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-supermercado-i3d.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-supermercado-i3d}
+\end{figure}
+
+Em contrapartida, o TimeSFormer apresentou falhas mais relacionadas à latência e à interpretação equívoca do contexto global. No vídeo \textit{furto-celular}, a detecção do evento ocorreu com um atraso considerável, a observação dos quadros críticos na \autoref{fig:furto-celular-ts} mostra que a probabilidade permaneceu baixa durante o momento da subtração, superando o limiar apenas após a ação ter sido concluída. Por fim, no vídeo \textit{furto-pc}, o modelo interpretou incorretamente uma seção de comportamento normal e não reagiu durante o instante real do furto, na \autoref{fig:furto-pc-ts}. Esse comportamento indica que, em certos arranjos visuais, o mecanismo de auto-atenção global pode se fixar em elementos contextuais irrelevantes da cena, perdendo a sensibilidade para a dinâmica local da ação do indivíduo.
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-celular}.]{Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-celular}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-celular-ts.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-celular-ts}
+\end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \caption[Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-pc}.]{Curva de probabilidade do modelo TimeSFormer para o vídeo \textit{furto-pc}.}
+	\includegraphics[width=1.0\textwidth]{figuras/furto-pc-ts.png}
+	\legend{Fonte - Do autor.}
+    \label{fig:furto-pc-ts}
+\end{figure}
+
+\section[Síntese dos Resultados]{Síntese dos Resultados}
+A avaliação em vídeos reais contínuos revelou comportamentos distintos entre as arquiteturas ao enfrentar as condições típicas de um sistema de monitoramento. A análise preditiva aplicada aos sete vídeos reais consolida as seguintes constatações:
+
+\begin{itemize}
+\item \textbf{Seletividade e Robustez do TimeSFormer:} O modelo baseado no mecanismo de atenção demonstrou maior seletividade em suas predições. A arquitetura obteve sucesso notável ao elevar a probabilidade de anomalia de maneira sincronizada com as ações efetivas de ocultação dos itens, retornando à normalidade em seguida. As limitações encontradas neste modelo estiveram relacionadas predominantemente à latência, resultando em atraso considerável na detecção de alguns eventos. Ademais, o mecanismo de auto-atenção global mostrou-se suscetível a focar em elementos contextuais irrelevantes, perdendo a sensibilidade para as dinâmicas locais da ação do infrator.
+
+\item \textbf{Sensibilidade a Movimentos e Saturação do I3D:} A arquitetura convolucional apresentou sucesso expressivo e alta precisão temporal na detecção de subtrações caracterizadas por movimentos abruptos. Contudo, o I3D exibiu uma clara tendência a falsos positivos e à total falta de precisão temporal na detecção de outras modalidades de furto. As curvas de probabilidade desse modelo saturaram frequentemente em patamares elevados devido à simples presença de um indivíduo manipulando os produtos, evidenciando a dificuldade da rede de distinguir entre interações legítimas e atos intencionais de ocultação.
+
+\item \textbf{Vulnerabilidade Compartilhada a Oclusões Severas:} As duas arquiteturas falharam na detecção em cenários marcados por oclusões severas e ações corporais de baixa magnitude visual. Quando a ação era demasiadamente oclusa, os modelos eram inibidos de extrair as características espaço-temporais indispensáveis, mantendo as probabilidades de alarme significativamente abaixo do necessário para discriminação do ato.
+\end{itemize}
 
 \chapter[Conclusões]{Conclusões}
 %TCC:
