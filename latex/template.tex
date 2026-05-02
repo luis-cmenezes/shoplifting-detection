@@ -31,6 +31,10 @@ comportamento suspeito no varejo} %TCC
 
 \hypersetup{pdfkeywords={visão computacional}{varejo}{furto}{deep learning}{análise de vídeo}} %TCC
 
+\pdfstringdefDisableCommands{%
+  \let\uppercase\relax%
+}
+
 \begin{document} 
 \frenchspacing 
 
@@ -681,7 +685,7 @@ Padrão semelhante é verificado no TimeSFormer (\autoref{fig:training_loss}b). 
     
     {\footnotesize (a) I3D}
     
-    \includegraphics[height=0.65\textheight]{figuras/timesformer_training_loss.png}
+    \includegraphics[height=0.60\textheight]{figuras/timesformer_training_loss.png}
 
     
     {\footnotesize (b) TimeSFormer}
@@ -1043,7 +1047,7 @@ O código-fonte, os experimentos e a documentação desenvolvidos neste trabalho
 
     \item \textbf{\href{https://github.com/luis-cmenezes/i3d-shoplifting}{i3d-shoplifting}}: subpacote responsável pelo \textit{fine-tuning} do modelo I3D como classificador binário. Implementa a arquitetura I3D em PyTorch puro, os módulos de pré-processamento para extração de quadros RGB e geração de fluxo óptico TV-L1, e o laço de treinamento com \texttt{BCEWithLogitsLoss} e ponderação de classes.
 
-    \item \textbf{\href{https://github.com/luis-cmenezes/timesformer-shoplifting}{timesformer-shoplifting}}: subpacote responsável pelo \textit{fine-tuning} do modelo TimeSFormer como classificador binário. Implementa o \textit{dataset} PyTorch com amostragem temporal via Decord, os utilitários de padronização de vídeo com FFmpeg e o treinamento por meio do \texttt{Trainer} da biblioteca \textit{Transformers} com \texttt{CrossEntropyLoss} e ponderação de classes.
+    \item \textbf{\href{https://github.com/luis-cmenezes/timesformer-shoplifting}{timesformer-shoplifting}}: subpacote responsável pelo \textit{fine-tuning} do modelo TimeSFormer como classificador binário. Implementa o \textit{dataset} PyTorch com amostragem temporal via Decord, os utilitários de padronização de vídeo com FFmpeg e o treinamento por meio do \texttt{Trainer} da biblioteca \textit{Transformers} com \texttt{CEL} e ponderação de classes.
 \end{itemize}
 
 \section*{Gerenciamento de Dependências com UV}
