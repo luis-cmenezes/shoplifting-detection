@@ -5,40 +5,40 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{10}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{11}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo}{15}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Aprendizado Supervisionado e Classificação Binária}{16}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Análise de Imagens}{17}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Redes Neurais Convolucionais}{17}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Transformadores de Visão}{18}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Análise de Vídeos}{19}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Arquiteturas para Análise de Vídeos}{20}{section.2.5}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo}{16}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Aprendizado Supervisionado e Classificação Binária}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Análise de Imagens}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Redes Neurais Convolucionais}{18}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Transformadores de Visão}{19}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Análise de Vídeos}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Arquiteturas para Análise de Vídeos}{21}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}\textit {Inflated 3D ConvNet}}{21}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}TimeSFormer}{22}{subsection.2.5.2}%
 \contentsline {section}{\numberline {2.6}\textit {Transfer Learning} e \textit {fine-tuning}}{23}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Métricas e Função de Perda}{24}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Métricas e Função de Perda}{25}{section.2.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Descrição do Banco de Dados}}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Construção do conjunto de dados}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Representação e Pré-processamento}{31}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Aumento de Banco de Dados}{31}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Divisão do conjunto de dados}{32}{section.3.4}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Descrição do Banco de Dados}}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Construção do conjunto de dados}{28}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Representação e Pré-processamento}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Aumento de Banco de Dados}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Divisão do conjunto de dados}{33}{section.3.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados do Treinamento}}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Configuração dos Experimentos}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Preparação do Modelo I3D}{35}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Preparação do Modelo TimeSFormer}{35}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Interpolação dos \textit {Time Embeddings}}{36}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Taxa de Aprendizado e Ausência de \textit {Batch Normalization}}{36}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Comparação da Dimensão dos Treinamentos}{37}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Dinâmica de Treinamento e Convergência}{37}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Evolução das Métricas na Validação}{38}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Avaliação Global e Seleção de Modelos}{40}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Desempenho no Conjunto de Teste}{40}{section.4.8}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados do Treinamento}}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Configuração dos Experimentos}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Preparação do Modelo I3D}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Preparação do Modelo TimeSFormer}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Interpolação dos \textit {Time Embeddings}}{37}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Taxa de Aprendizado e Ausência de \textit {Batch Normalization}}{37}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Comparação da Dimensão dos Treinamentos}{38}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Dinâmica de Treinamento e Convergência}{38}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Evolução das Métricas na Validação}{39}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Avaliação Global e Seleção de Modelos}{39}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Desempenho no Conjunto de Teste}{41}{section.4.8}%
 \contentsline {section}{\numberline {4.9}Eficiência}{43}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Síntese dos Resultados}{44}{section.4.10}%
+\contentsline {section}{\numberline {4.10}Síntese dos Resultados}{45}{section.4.10}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Avaliação em Vídeos Reais}}{46}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Metodologia de Inferência}{46}{section.5.1}%
@@ -51,4 +51,12 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Conclusões}}{56}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{57}{section*.11}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{58}{section*.12}%
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{62}{section*.13}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Repositórios do Projeto}}{63}{appendix.A}%

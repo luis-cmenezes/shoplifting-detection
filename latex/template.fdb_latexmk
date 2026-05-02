@@ -1,22 +1,22 @@
 # Fdb version 4
-["bibtex template"] 1777516111.15648 "template.aux" "template.bbl" "template" 1777516115.76659 0
+["bibtex template"] 1777740957.6481 "template.aux" "template.bbl" "template" 1777740988.61488 0
   "./abntex2-modelo-references.bib" 1777129269.35696 15879 aceebad028a76f3be71b967208fb15c0 ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "template.aux" 1777516115.23972 43920 2ad00c2bda8ca5c7b21ac435da4a7a12 "pdflatex"
+  "template.aux" 1777740988.03175 45376 a3cfd34a619ba702d056313825037907 "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["makeindex template.idx"] 1777512477.0432 "template.idx" "template.ind" "template" 1777516115.76644 0
-  "template.idx" 1777516111.88781 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex template.idx"] 1777740761.23929 "template.idx" "template.ind" "template" 1777740988.61473 0
+  "template.idx" 1777740984.66371 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "template.ilg"
   "template.ind"
   (rewritten before read)
-["pdflatex"] 1777516111.29893 "/home/luis/tcc/latex/template.tex" "template.pdf" "template" 1777516115.76681 0
+["pdflatex"] 1777740984.04889 "/home/luis/tcc/latex/template.tex" "template.pdf" "template" 1777740988.6151 0
   "/etc/texmf/web2c/texmf.cnf" 1777125504.47382 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/luis/tcc/latex/template.tex" 1777516106.43972 100439 b4b9bb3d27ac5d75c661242445d36021 ""
+  "/home/luis/tcc/latex/template.tex" 1777740979.61064 113004 6c6b2f9323b21c8a2f28c4f139b49c76 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -31,6 +31,8 @@
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf" 1625860693 6591 308dec8ccec5a8d302be8a046d473dd3 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty" 1704662920 150008 7a05b0fdc0167c04e192003e780ab195 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-en.ini" 1661803479 3966 caeee5a9e5771d4446aa1ca9015ba1b2 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex" 1498512262 336 ed676b5e7dfd862bc78d634f6a973f37 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def" 1704662920 6948 df63e25be1d2bc35bbad5a0141f41348 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -232,13 +234,13 @@
   "figuras/trechos-shopping.png" 1777231106.1857 425078 52e6d34f8bc920f2965ccbc7fb3febf2 ""
   "figuras/venn-ai.png" 1777136158 26426 a13f89b72a4071f0fe0e8d96fccc36ea ""
   "figuras/vit.png" 1777136158 238910 017c3981312ac64ac0a901592d2017e7 ""
-  "template.aux" 1777516115.23972 43920 2ad00c2bda8ca5c7b21ac435da4a7a12 "pdflatex"
-  "template.bbl" 1777516111.29338 14748 c5e3de91c9373ff6b4fb29a92d160d7c "bibtex template"
-  "template.ind" 1777512477.16777 0 d41d8cd98f00b204e9800998ecf8427e "makeindex template.idx"
-  "template.lof" 1777516115.24886 4717 3b2084837af4ea81e280a1d31179659d "pdflatex"
-  "template.lot" 1777516115.24886 964 87bdf1e0527f3d01b020ff300ea11705 "pdflatex"
-  "template.tex" 1777516106.43972 100439 b4b9bb3d27ac5d75c661242445d36021 ""
-  "template.toc" 1777516115.24886 4934 a4d3bdf2613911853dbbcf6c5ec5b356 "pdflatex"
+  "template.aux" 1777740988.03175 45376 a3cfd34a619ba702d056313825037907 "pdflatex"
+  "template.bbl" 1777740957.78811 14748 c5e3de91c9373ff6b4fb29a92d160d7c "bibtex template"
+  "template.ind" 1777740761.37186 0 d41d8cd98f00b204e9800998ecf8427e "makeindex template.idx"
+  "template.lof" 1777740988.04275 4717 e701c0ec519092819f0a4452b14e12e5 "pdflatex"
+  "template.lot" 1777740988.04275 964 3721b5d6b8c4d9941d476d5b93f9ada0 "pdflatex"
+  "template.tex" 1777740979.61064 113004 6c6b2f9323b21c8a2f28c4f139b49c76 ""
+  "template.toc" 1777740988.04275 5461 08df53af8fa5a5001086422b280ba1ae "pdflatex"
   (generated)
   "template.aux"
   "template.idx"

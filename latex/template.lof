@@ -1,20 +1,20 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Relação hierárquica entre Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo.}}{16}{figure.2.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Arquitetura típica de uma RNC e a extração progressiva de mapas de características.}}{18}{figure.2.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Processo de divisão de uma imagem em \textit {patches} e adição de \textit {embeddings} posicionais na arquitetura \textit {Vision Transformer}.}}{19}{figure.2.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Comparação entre a operação de convolução padrão (2D) e a convolução espaço-temporal (3D) aplicada a volumes de vídeo.}}{21}{figure.2.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Visualização da fatoração do mecanismo de atenção em componentes temporais e espaciais na arquitetura TimeSFormer.}}{22}{figure.2.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Fluxo conceitual do processo de \textit {Transfer Learning} e \textit {fine-tuning} adaptando pesos de um domínio de origem para uma tarefa específica.}}{24}{figure.2.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de Curvas ROC, a Área Sob a Curva (AUC) é a métrica empregada para avaliar cenários de classificação desbalanceados.}}{26}{figure.2.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de amostra da classe “\textit {Shoplifting}” do banco de dados MNNIT.}}{28}{figure.3.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de amostra da classe “\textit {Shoplifting}” do banco de dados Shoplifting Dataset 2.0.}}{29}{figure.3.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Exemplos de ambientes do banco de dados DCSASS.}}{30}{figure.3.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Exemplo de transformação de sequência de quadros original (acima) após a aplicação das técnicas adotadas para aumento de banco de dados (abaixo).}}{32}{figure.3.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Curvas de perda de treinamento para os experimentos do I3D (a) e TimeSFormer (b) nas modalidades ''Completo'' e ''Cabeça''.}}{39}{figure.4.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Evolução das métricas de validação para o I3D.}}{40}{figure.4.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Evolução das métricas de validação para o TimeSFormer.}}{41}{figure.4.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Comparação geral de AUC-ROC entre todas as 16 configurações experimentais.}}{42}{figure.4.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Matrizes de confusão do melhor I3D e do melhor TimeSFormer no conjunto de teste.}}{43}{figure.4.16}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Relação hierárquica entre Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo.}}{17}{figure.2.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Arquitetura típica de uma RNC e a extração progressiva de mapas de características.}}{19}{figure.2.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Processo de divisão de uma imagem em \textit {patches} e adição de \textit {embeddings} posicionais na arquitetura \textit {Vision Transformer}.}}{20}{figure.2.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparação entre a operação de convolução padrão (2D) e a convolução espaço-temporal (3D) aplicada a volumes de vídeo.}}{22}{figure.2.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Visualização da fatoração do mecanismo de atenção em componentes temporais e espaciais na arquitetura TimeSFormer.}}{23}{figure.2.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Fluxo conceitual do processo de \textit {Transfer Learning} e \textit {fine-tuning} adaptando pesos de um domínio de origem para uma tarefa específica.}}{25}{figure.2.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de Curvas ROC, a Área Sob a Curva (AUC) é a métrica empregada para avaliar cenários de classificação desbalanceados.}}{27}{figure.2.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de amostra da classe “\textit {Shoplifting}” do banco de dados MNNIT.}}{29}{figure.3.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de amostra da classe “\textit {Shoplifting}” do banco de dados Shoplifting Dataset 2.0.}}{30}{figure.3.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplos de ambientes do banco de dados DCSASS.}}{31}{figure.3.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Exemplo de transformação de sequência de quadros original (acima) após a aplicação das técnicas adotadas para aumento de banco de dados (abaixo).}}{33}{figure.3.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Curvas de perda de treinamento para os experimentos do I3D (a) e TimeSFormer (b) nas modalidades ''Completo'' e ''Cabeça''.}}{40}{figure.4.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Evolução das métricas de validação para o I3D.}}{41}{figure.4.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Evolução das métricas de validação para o TimeSFormer.}}{42}{figure.4.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Comparação geral de AUC-ROC entre todas as 16 configurações experimentais.}}{43}{figure.4.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Matrizes de confusão do melhor I3D e do melhor TimeSFormer no conjunto de teste.}}{44}{figure.4.16}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Exemplo de aplicação da abordagem de janela deslizante sobre vídeo real.}}{47}{figure.5.17}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Curva de probabilidade do modelo TimeSFormer para o vídeo \textit {furto-supermercado}.}}{49}{figure.5.18}%
 \contentsline {figure}{\numberline {19}{\ignorespaces Curva de probabilidade do modelo TimeSFormer para o vídeo \textit {furto-tenis1}.}}{50}{figure.5.19}%

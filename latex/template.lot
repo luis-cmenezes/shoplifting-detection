@@ -1,7 +1,7 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Variações de experimentos realizados. Os símbolos ``\text {$\mathsurround \z@ \mathchar "458$}'' indicam os experimentos conduzidos, enquanto ``--'' indica configurações que não foram treinadas.}}{34}{table.4.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces Parâmetros comuns de treinamento.}}{35}{table.4.2}%
-\contentsline {table}{\numberline {3}{\ignorespaces Número total e treinável de parâmetros.}}{37}{table.4.3}%
-\contentsline {table}{\numberline {4}{\ignorespaces Métricas no conjunto de teste dos melhores modelos (Precisão, Revocação e F2-Score).}}{42}{table.4.4}%
-\contentsline {table}{\numberline {5}{\ignorespaces \textit {Throughput} de inferência dos melhores modelos I3D e TimeSFormer.}}{43}{table.4.5}%
+\contentsline {table}{\numberline {1}{\ignorespaces Variações de experimentos realizados. Os símbolos ``\text {$\mathsurround \z@ \mathchar "458$}'' indicam os experimentos conduzidos, enquanto ``--'' indica configurações que não foram treinadas.}}{35}{table.4.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Parâmetros comuns de treinamento.}}{36}{table.4.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces Número total e treinável de parâmetros.}}{38}{table.4.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Métricas no conjunto de teste dos melhores modelos (Precisão, Revocação e F2-Score).}}{43}{table.4.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces \textit {Throughput} de inferência dos melhores modelos I3D e TimeSFormer.}}{44}{table.4.5}%
 \contentsline {table}{\numberline {6}{\ignorespaces Características dos vídeos reais de furto utilizados na avaliação.}}{47}{table.5.6}%

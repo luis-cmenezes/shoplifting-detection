@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.25)  29 APR 2026 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.25)  2 MAY 2026 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,11 +845,16 @@ l.43
 
 ] [3
 
-] (./template.lof [4
+] (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing basic data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) [4
 
-]) [5] (./template.lot) [6
+] (./template.lof [5
 
-] [7
+]) [6] (./template.lot) [7
+
+] [8
 
 
 ] (./template.toc
@@ -857,224 +862,242 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 18.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 20.
- [8
+ [9
 
-]) [9] [10
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 58.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 58.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 58.
+) [10] [11
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 222.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 222.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 222.
- [11] [12] [13] [14]
-<figuras/venn-ai.png, id=341, 567.11874pt x 567.11874pt>
+(Font)              <5> on input line 228.
+ [12] [13] [14] [15]
+<figuras/venn-ai.png, id=351, 567.11874pt x 567.11874pt>
 File: figuras/venn-ai.png Graphic file (type png)
 <use figuras/venn-ai.png>
-Package pdftex.def Info: figuras/venn-ai.png  used on input line 267.
+Package pdftex.def Info: figuras/venn-ai.png  used on input line 271.
 (pdftex.def)             Requested size: 181.99722pt x 181.99226pt.
- [15
+ [16
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [16{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/venn-ai.png (PNG copy)>] [17]
-<figuras/cnn.png, id=384, 2180.145pt x 787.94376pt>
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [17{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./figuras/venn-ai.png (PNG copy)>] [18]
+<figuras/cnn.png, id=395, 2180.145pt x 787.94376pt>
 File: figuras/cnn.png Graphic file (type png)
 <use figuras/cnn.png>
-Package pdftex.def Info: figuras/cnn.png  used on input line 300.
+Package pdftex.def Info: figuras/cnn.png  used on input line 304.
 (pdftex.def)             Requested size: 455.0pt x 164.43909pt.
-<figuras/vit.png, id=394, 1405.25pt x 1126.2075pt>
+<figuras/vit.png, id=405, 1405.25pt x 1126.2075pt>
 File: figuras/vit.png Graphic file (type png)
 <use figuras/vit.png>
-Package pdftex.def Info: figuras/vit.png  used on input line 314.
+Package pdftex.def Info: figuras/vit.png  used on input line 318.
 (pdftex.def)             Requested size: 397.41272pt x 318.49861pt.
- [18 <./figuras/cnn.png (PNG copy)>] [19 <./figuras/vit.png>] [20]
+ [19 <./figuras/cnn.png (PNG copy)>] [20 <./figuras/vit.png>] [21]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 335.
-<figuras/3d-vs-2d.png, id=442, 853.1875pt x 1064.97874pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 339.
+<figuras/3d-vs-2d.png, id=452, 853.1875pt x 1064.97874pt>
 File: figuras/3d-vs-2d.png Graphic file (type png)
 <use figuras/3d-vs-2d.png>
-Package pdftex.def Info: figuras/3d-vs-2d.png  used on input line 342.
+Package pdftex.def Info: figuras/3d-vs-2d.png  used on input line 346.
 (pdftex.def)             Requested size: 236.92506pt x 295.74722pt.
- [21 <./figuras/3d-vs-2d.png>]
-<figuras/timesformer.png, id=457, 866.23625pt x 591.20876pt>
+ [22 <./figuras/3d-vs-2d.png>]
+<figuras/timesformer.png, id=468, 866.23625pt x 591.20876pt>
 File: figuras/timesformer.png Graphic file (type png)
 <use figuras/timesformer.png>
-Package pdftex.def Info: figuras/timesformer.png  used on input line 360.
+Package pdftex.def Info: figuras/timesformer.png  used on input line 364.
 (pdftex.def)             Requested size: 359.98361pt x 245.69695pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 365.
- [22 <./figuras/timesformer.png (PNG copy)>] [23]
-<figuras/transfer-fine.png, id=498, 823.075pt x 368.37625pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 369.
+ [23 <./figuras/timesformer.png (PNG copy)>] [24]
+<figuras/transfer-fine.png, id=509, 823.075pt x 368.37625pt>
 File: figuras/transfer-fine.png Graphic file (type png)
 <use figuras/transfer-fine.png>
-Package pdftex.def Info: figuras/transfer-fine.png  used on input line 383.
+Package pdftex.def Info: figuras/transfer-fine.png  used on input line 387.
 (pdftex.def)             Requested size: 355.81177pt x 159.25278pt.
- [24 <./figuras/transfer-fine.png (PNG copy)>] [25]
-<figuras/roc.png, id=525, 563.10374pt x 497.86pt>
+ [25 <./figuras/transfer-fine.png (PNG copy)>] [26]
+<figuras/roc.png, id=535, 563.10374pt x 497.86pt>
 File: figuras/roc.png Graphic file (type png)
 <use figuras/roc.png>
-Package pdftex.def Info: figuras/roc.png  used on input line 407.
+Package pdftex.def Info: figuras/roc.png  used on input line 411.
 (pdftex.def)             Requested size: 257.321pt x 227.5pt.
- [26 <./figuras/roc.png (PNG copy)>]
-<figuras/mnnit.png, id=547, 1927.2pt x 1445.4pt>
+ [27 <./figuras/roc.png (PNG copy)>]
+<figuras/mnnit.png, id=557, 1927.2pt x 1445.4pt>
 File: figuras/mnnit.png Graphic file (type png)
 <use figuras/mnnit.png>
-Package pdftex.def Info: figuras/mnnit.png  used on input line 428.
+Package pdftex.def Info: figuras/mnnit.png  used on input line 432.
 (pdftex.def)             Requested size: 455.0pt x 341.23495pt.
- [27
+ [28
 
 ]
-<figuras/shop20.png, id=553, 1589.94pt x 1300.86pt>
+<figuras/shop20.png, id=563, 1589.94pt x 1300.86pt>
 File: figuras/shop20.png Graphic file (type png)
 <use figuras/shop20.png>
-Package pdftex.def Info: figuras/shop20.png  used on input line 439.
+Package pdftex.def Info: figuras/shop20.png  used on input line 443.
 (pdftex.def)             Requested size: 455.0pt x 372.27737pt.
- [28 <./figuras/mnnit.png (PNG copy)>]
-<figuras/dcsass.png, id=559, 505.89pt x 505.89pt>
+ [29 <./figuras/mnnit.png (PNG copy)>]
+<figuras/dcsass.png, id=569, 505.89pt x 505.89pt>
 File: figuras/dcsass.png Graphic file (type png)
 <use figuras/dcsass.png>
-Package pdftex.def Info: figuras/dcsass.png  used on input line 449.
+Package pdftex.def Info: figuras/dcsass.png  used on input line 453.
 (pdftex.def)             Requested size: 455.0pt x 455.01117pt.
- [29 <./figuras/shop20.png (PNG copy)>] [30 <./figuras/dcsass.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 469.
+ [30 <./figuras/shop20.png (PNG copy)>] [31 <./figuras/dcsass.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 473.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [31{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
-<figuras/dataaug.png, id=578, 875.52094pt x 520.94624pt>
+) [32{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+<figuras/dataaug.png, id=589, 875.52094pt x 520.94624pt>
 File: figuras/dataaug.png Graphic file (type png)
 <use figuras/dataaug.png>
-Package pdftex.def Info: figuras/dataaug.png  used on input line 478.
+Package pdftex.def Info: figuras/dataaug.png  used on input line 482.
 (pdftex.def)             Requested size: 455.0pt x 270.73462pt.
- [32 <./figuras/dataaug.png (PNG copy)>] [33] [34
+ [33 <./figuras/dataaug.png (PNG copy)>] [34] [35
 
-] [35]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 607.
+] [36]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 611.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [36] [37]
-<figuras/i3d_training_loss.png, id=623, 512.03294pt x 319.4334pt>
+) [37] [38]
+<figuras/i3d_training_loss.png, id=633, 512.03294pt x 319.4334pt>
 File: figuras/i3d_training_loss.png Graphic file (type png)
 <use figuras/i3d_training_loss.png>
-Package pdftex.def Info: figuras/i3d_training_loss.png  used on input line 676.
+Package pdftex.def Info: figuras/i3d_training_loss.png  used on input line 680.
 (pdftex.def)             Requested size: 283.72849pt x 177.0pt.
-<figuras/timesformer_training_loss.png, id=624, 722.7pt x 895.4253pt>
+<figuras/timesformer_training_loss.png, id=634, 722.7pt x 895.4253pt>
 File: figuras/timesformer_training_loss.png Graphic file (type png)
 <use figuras/timesformer_training_loss.png>
-Package pdftex.def Info: figuras/timesformer_training_loss.png  used on input line 680.
+Package pdftex.def Info: figuras/timesformer_training_loss.png  used on input line 684.
 (pdftex.def)             Requested size: 371.42824pt x 460.19568pt.
 
 
-LaTeX Warning: Float too large for page by 28.44568pt on input line 687.
+LaTeX Warning: Float too large for page by 28.44568pt on input line 691.
 
-<figuras/i3d_validation_metrics.png, id=626, 866.87865pt x 600.5637pt>
+<figuras/i3d_validation_metrics.png, id=636, 866.87865pt x 600.5637pt>
 File: figuras/i3d_validation_metrics.png Graphic file (type png)
 <use figuras/i3d_validation_metrics.png>
-Package pdftex.def Info: figuras/i3d_validation_metrics.png  used on input line 699.
+Package pdftex.def Info: figuras/i3d_validation_metrics.png  used on input line 703.
 (pdftex.def)             Requested size: 455.0pt x 315.21819pt.
-<figuras/timesformer_val_eval_accuracy.png, id=628, 1011.78pt x 600.5637pt>
+<figuras/timesformer_val_eval_accuracy.png, id=638, 1011.78pt x 600.5637pt>
 File: figuras/timesformer_val_eval_accuracy.png Graphic file (type png)
 <use figuras/timesformer_val_eval_accuracy.png>
-Package pdftex.def Info: figuras/timesformer_val_eval_accuracy.png  used on input line 715.
+Package pdftex.def Info: figuras/timesformer_val_eval_accuracy.png  used on input line 719.
 (pdftex.def)             Requested size: 369.7675pt x 219.47827pt.
-<figuras/timesformer_val_eval_f1.png, id=629, 1011.78pt x 600.5637pt>
+<figuras/timesformer_val_eval_f1.png, id=639, 1011.78pt x 600.5637pt>
 File: figuras/timesformer_val_eval_f1.png Graphic file (type png)
 <use figuras/timesformer_val_eval_f1.png>
-Package pdftex.def Info: figuras/timesformer_val_eval_f1.png  used on input line 720.
+Package pdftex.def Info: figuras/timesformer_val_eval_f1.png  used on input line 724.
 (pdftex.def)             Requested size: 369.7675pt x 219.47827pt.
-<figuras/timesformer_val_eval_auc_roc.png, id=630, 1011.78pt x 600.5637pt>
+<figuras/timesformer_val_eval_auc_roc.png, id=640, 1011.78pt x 600.5637pt>
 File: figuras/timesformer_val_eval_auc_roc.png Graphic file (type png)
 <use figuras/timesformer_val_eval_auc_roc.png>
-Package pdftex.def Info: figuras/timesformer_val_eval_auc_roc.png  used on input line 725.
+Package pdftex.def Info: figuras/timesformer_val_eval_auc_roc.png  used on input line 729.
 (pdftex.def)             Requested size: 369.7675pt x 219.47827pt.
-[38] [39 <./figuras/i3d_training_loss.png> <./figuras/timesformer_training_loss.png>]
-<figuras/auc_comparison_all.png, id=642, 867.24pt x 433.62pt>
+[39] [40 <./figuras/i3d_training_loss.png> <./figuras/timesformer_training_loss.png>]
+<figuras/auc_comparison_all.png, id=652, 867.24pt x 433.62pt>
 File: figuras/auc_comparison_all.png Graphic file (type png)
 <use figuras/auc_comparison_all.png>
-Package pdftex.def Info: figuras/auc_comparison_all.png  used on input line 739.
+Package pdftex.def Info: figuras/auc_comparison_all.png  used on input line 743.
 (pdftex.def)             Requested size: 455.0pt x 227.50172pt.
- [40 <./figuras/i3d_validation_metrics.png>] [41 <./figuras/timesformer_val_eval_accuracy.png> <./figuras/timesformer_val_eval_f1.png> <./figuras/timesformer_val_eval_auc_roc.png>]
-<figuras/test_confusion_matrices.png, id=657, 722.7pt x 342.5598pt>
+ [41 <./figuras/i3d_validation_metrics.png>] [42 <./figuras/timesformer_val_eval_accuracy.png> <./figuras/timesformer_val_eval_f1.png> <./figuras/timesformer_val_eval_auc_roc.png>]
+<figuras/test_confusion_matrices.png, id=668, 722.7pt x 342.5598pt>
 File: figuras/test_confusion_matrices.png Graphic file (type png)
 <use figuras/test_confusion_matrices.png>
-Package pdftex.def Info: figuras/test_confusion_matrices.png  used on input line 770.
+Package pdftex.def Info: figuras/test_confusion_matrices.png  used on input line 774.
 (pdftex.def)             Requested size: 409.49722pt x 194.1007pt.
- [42 <./figuras/auc_comparison_all.png>] [43 <./figuras/test_confusion_matrices.png>] [44] [45]
-<figuras/janela_desliz.png, id=684, 1355.0625pt x 958.58125pt>
+ [43 <./figuras/auc_comparison_all.png>] [44 <./figuras/test_confusion_matrices.png>] [45] [46]
+<figuras/janela_desliz.png, id=694, 1355.0625pt x 958.58125pt>
 File: figuras/janela_desliz.png Graphic file (type png)
 <use figuras/janela_desliz.png>
-Package pdftex.def Info: figuras/janela_desliz.png  used on input line 829.
+Package pdftex.def Info: figuras/janela_desliz.png  used on input line 833.
 (pdftex.def)             Requested size: 364.00139pt x 257.48936pt.
- [46
+ [47
 
-] [47 <./figuras/janela_desliz.png>]
-Underfull \hbox (badness 1158) in paragraph at lines 871--871
+] [48 <./figuras/janela_desliz.png>]
+Underfull \hbox (badness 1158) in paragraph at lines 875--875
 [][][]\T1/lmr/m/n/12 Curva de pro-ba-bi-li-dade do mo-delo Ti-meS-For-mer para o ví-deo \T1/lmr/m/it/12 furto-
  []
 
-<figuras/furto-supermercado-ts.png, id=698, 722.7pt x 517.18219pt>
+<figuras/furto-supermercado-ts.png, id=710, 722.7pt x 517.18219pt>
 File: figuras/furto-supermercado-ts.png Graphic file (type png)
 <use figuras/furto-supermercado-ts.png>
-Package pdftex.def Info: figuras/furto-supermercado-ts.png  used on input line 872.
+Package pdftex.def Info: figuras/furto-supermercado-ts.png  used on input line 876.
 (pdftex.def)             Requested size: 455.0pt x 325.61343pt.
-<figuras/furto-tenis1-ts.png, id=699, 702.37407pt x 508.90125pt>
+<figuras/furto-tenis1-ts.png, id=711, 702.37407pt x 508.90125pt>
 File: figuras/furto-tenis1-ts.png Graphic file (type png)
 <use figuras/furto-tenis1-ts.png>
-Package pdftex.def Info: figuras/furto-tenis1-ts.png  used on input line 879.
+Package pdftex.def Info: figuras/furto-tenis1-ts.png  used on input line 883.
 (pdftex.def)             Requested size: 455.0pt x 329.67923pt.
-<figuras/furto-tenis2-ts.png, id=700, 752.0597pt x 509.65407pt>
+<figuras/furto-tenis2-ts.png, id=712, 752.0597pt x 509.65407pt>
 File: figuras/furto-tenis2-ts.png Graphic file (type png)
 <use figuras/furto-tenis2-ts.png>
-Package pdftex.def Info: figuras/furto-tenis2-ts.png  used on input line 886.
+Package pdftex.def Info: figuras/furto-tenis2-ts.png  used on input line 890.
 (pdftex.def)             Requested size: 455.0pt x 308.35332pt.
-<figuras/furto-celular-i3d.png, id=703, 877.77937pt x 571.38469pt>
+<figuras/furto-celular-i3d.png, id=715, 877.77937pt x 571.38469pt>
 File: figuras/furto-celular-i3d.png Graphic file (type png)
 <use figuras/furto-celular-i3d.png>
-Package pdftex.def Info: figuras/furto-celular-i3d.png  used on input line 896.
+Package pdftex.def Info: figuras/furto-celular-i3d.png  used on input line 900.
 (pdftex.def)             Requested size: 455.0pt x 296.18013pt.
-<figuras/furto-pc-i3d.png, id=704, 877.77937pt x 562.35094pt>
+<figuras/furto-pc-i3d.png, id=716, 877.77937pt x 562.35094pt>
 File: figuras/furto-pc-i3d.png Graphic file (type png)
 <use figuras/furto-pc-i3d.png>
-Package pdftex.def Info: figuras/furto-pc-i3d.png  used on input line 903.
+Package pdftex.def Info: figuras/furto-pc-i3d.png  used on input line 907.
 (pdftex.def)             Requested size: 455.0pt x 291.49745pt.
-<figuras/trechos-roupa.png, id=707, 810.02625pt x 684.30656pt>
+<figuras/trechos-roupa.png, id=719, 810.02625pt x 684.30656pt>
 File: figuras/trechos-roupa.png Graphic file (type png)
 <use figuras/trechos-roupa.png>
-Package pdftex.def Info: figuras/trechos-roupa.png  used on input line 915.
+Package pdftex.def Info: figuras/trechos-roupa.png  used on input line 919.
 (pdftex.def)             Requested size: 318.47984pt x 269.04346pt.
-<figuras/trechos-shopping.png, id=708, 812.28468pt x 682.80093pt>
+<figuras/trechos-shopping.png, id=720, 812.28468pt x 682.80093pt>
 File: figuras/trechos-shopping.png Graphic file (type png)
 <use figuras/trechos-shopping.png>
-Package pdftex.def Info: figuras/trechos-shopping.png  used on input line 923.
+Package pdftex.def Info: figuras/trechos-shopping.png  used on input line 927.
 (pdftex.def)             Requested size: 320.06189pt x 269.04346pt.
-[48]
-<figuras/furto-tenis1-i3d.png, id=717, 877.77937pt x 563.85657pt>
+[49]
+<figuras/furto-tenis1-i3d.png, id=727, 877.77937pt x 563.85657pt>
 File: figuras/furto-tenis1-i3d.png Graphic file (type png)
 <use figuras/furto-tenis1-i3d.png>
-Package pdftex.def Info: figuras/furto-tenis1-i3d.png  used on input line 933.
+Package pdftex.def Info: figuras/furto-tenis1-i3d.png  used on input line 937.
 (pdftex.def)             Requested size: 455.0pt x 292.2779pt.
-<figuras/furto-supermercado-i3d.png, id=718, 877.77937pt x 574.39594pt>
+<figuras/furto-supermercado-i3d.png, id=728, 877.77937pt x 574.39594pt>
 File: figuras/furto-supermercado-i3d.png Graphic file (type png)
 <use figuras/furto-supermercado-i3d.png>
-Package pdftex.def Info: figuras/furto-supermercado-i3d.png  used on input line 940.
+Package pdftex.def Info: figuras/furto-supermercado-i3d.png  used on input line 944.
 (pdftex.def)             Requested size: 455.0pt x 297.74103pt.
-<figuras/furto-celular-ts.png, id=721, 877.77937pt x 571.38469pt>
+<figuras/furto-celular-ts.png, id=731, 877.77937pt x 571.38469pt>
 File: figuras/furto-celular-ts.png Graphic file (type png)
 <use figuras/furto-celular-ts.png>
-Package pdftex.def Info: figuras/furto-celular-ts.png  used on input line 949.
+Package pdftex.def Info: figuras/furto-celular-ts.png  used on input line 953.
 (pdftex.def)             Requested size: 455.0pt x 296.18013pt.
-<figuras/furto-pc-ts.png, id=722, 877.77937pt x 571.38469pt>
+<figuras/furto-pc-ts.png, id=732, 877.77937pt x 571.38469pt>
 File: figuras/furto-pc-ts.png Graphic file (type png)
 <use figuras/furto-pc-ts.png>
-Package pdftex.def Info: figuras/furto-pc-ts.png  used on input line 956.
+Package pdftex.def Info: figuras/furto-pc-ts.png  used on input line 960.
 (pdftex.def)             Requested size: 455.0pt x 296.18013pt.
- [49 <./figuras/furto-supermercado-ts.png (PNG copy)>] [50 <./figuras/furto-tenis1-ts.png (PNG copy)>] [51 <./figuras/furto-tenis2-ts.png (PNG copy)>] [52 <./figuras/furto-celular-i3d.png (PNG copy)> <./figuras/furto-pc-i3d.png (PNG copy)>] [53 <./figuras/trechos-roupa.png (PNG copy)> <./figuras/trechos-shopping.png (PNG copy)>] [54 <./figuras/furto-tenis1-i3d.png (PNG copy)> <./figuras/furto-supermercado-i3d.png (PNG copy)>] [55 <./figuras/furto-celular-ts.png (PNG copy)> <./figuras/furto-pc-ts.png (PNG copy)>] (./template.bbl [56
+ [50 <./figuras/furto-supermercado-ts.png (PNG copy)>] [51 <./figuras/furto-tenis1-ts.png (PNG copy)>] [52 <./figuras/furto-tenis2-ts.png (PNG copy)>] [53 <./figuras/furto-celular-i3d.png (PNG copy)> <./figuras/furto-pc-i3d.png (PNG copy)>] [54 <./figuras/trechos-roupa.png (PNG copy)> <./figuras/trechos-shopping.png (PNG copy)>] [55 <./figuras/furto-tenis1-i3d.png (PNG copy)> <./figuras/furto-supermercado-i3d.png (PNG copy)>] [56 <./figuras/furto-celular-ts.png (PNG copy)> <./figuras/furto-pc-ts.png (PNG copy)>] [57
+
+] (./template.bbl [58]
+bibitemlist
+[59
+
+] [60] [61]) [62]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 1033.
+
+[63
+
 
 ]
-bibitemlist
-[57
+Overfull \hbox (7.42322pt too wide) in paragraph at lines 1046--1047
+\T1/lmr/m/n/12 trei-na-mento por meio do \T1/lmtt/m/n/12 Trainer \T1/lmr/m/n/12 da bi-bli-o-teca \T1/lmr/m/it/12 Trans-for-mers \T1/lmr/m/n/12 com \T1/lmtt/m/n/12 CrossEntropyLoss
+ []
 
-] [58] [59]) (./template.ind) [60]
+(./template.ind) [64
+
+]
 \tf@lof=\write6
 \openout6 = `template.lof'.
 
@@ -1091,20 +1114,217 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18157 strings out of 474222
- 288574 string characters out of 5748733
+ 18319 strings out of 474222
+ 292206 string characters out of 5748733
  1945975 words of memory out of 5000000
- 39834 multiletter control sequences out of 15000+600000
- 659400 words of font info for 95 fonts, out of 8000000 for 9000
+ 39977 multiletter control sequences out of 15000+600000
+ 663417 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,13n,121p,1469b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,13n,121p,2040b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (61 pages, 17512931 bytes).
+Output written on template.pdf (65 pages, 17530542 bytes).
 PDF statistics:
- 1062 PDF objects out of 1200 (max. 8388607)
- 909 compressed objects within 10 object streams
- 206 named destinations out of 1000 (max. 500000)
- 552 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1099 PDF objects out of 1200 (max. 8388607)
+ 942 compressed objects within 10 object streams
+ 216 named destinations out of 1000 (max. 500000)
+ 576 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+.50172pt.
+
+
+LaTeX Warning: Reference `tab:test_metrics' on page 41 undefined on input line 751.
+
+
+LaTeX Warning: Reference `fig:test_confusion' on page 41 undefined on input line 769.
+
+[41 <./figuras/i3d_validation_metrics.png>] [42 <./figuras/timesformer_val_eval_accuracy.png> <./figuras/timesformer_val_eval_f1.png> <./figuras/timesformer_val_eval_auc_roc.png>]
+<figuras/test_confusion_matrices.png, id=436, 722.7pt x 342.5598pt>
+File: figuras/test_confusion_matrices.png Graphic file (type png)
+<use figuras/test_confusion_matrices.png>
+Package pdftex.def Info: figuras/test_confusion_matrices.png  used on input line 774.
+(pdftex.def)             Requested size: 409.49722pt x 194.1007pt.
+
+
+LaTeX Warning: Reference `tab:throughput' on page 43 undefined on input line 781.
+
+[43 <./figuras/auc_comparison_all.png>] [44 <./figuras/test_confusion_matrices.png>] [45]
+
+LaTeX Warning: Reference `fig:janela_deslizante' on page 46 undefined on input line 828.
+
+<figuras/janela_desliz.png, id=457, 1355.0625pt x 958.58125pt>
+File: figuras/janela_desliz.png Graphic file (type png)
+<use figuras/janela_desliz.png>
+Package pdftex.def Info: figuras/janela_desliz.png  used on input line 833.
+(pdftex.def)             Requested size: 364.00139pt x 257.48936pt.
+
+LaTeX Warning: Reference `tab:real_videos' on page 46 undefined on input line 840.
+
+[46
+
+] [47 <./figuras/janela_desliz.png>]
+
+LaTeX Warning: Reference `fig:furto-supermercado-ts' on page 48 undefined on input line 871.
+
+
+LaTeX Warning: Reference `fig:furto-tenis1-ts' on page 48 undefined on input line 871.
+
+
+LaTeX Warning: Reference `fig:furto-tenis2-ts' on page 48 undefined on input line 871.
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 875--875
+[][][]\T1/lmr/m/n/12 Curva de pro-ba-bi-li-dade do mo-delo Ti-meS-For-mer para o ví-deo \T1/lmr/m/it/12 furto-
+ []
+
+<figuras/furto-supermercado-ts.png, id=467, 722.7pt x 517.18219pt>
+File: figuras/furto-supermercado-ts.png Graphic file (type png)
+<use figuras/furto-supermercado-ts.png>
+Package pdftex.def Info: figuras/furto-supermercado-ts.png  used on input line 876.
+(pdftex.def)             Requested size: 455.0pt x 325.61343pt.
+<figuras/furto-tenis1-ts.png, id=468, 702.37407pt x 508.90125pt>
+File: figuras/furto-tenis1-ts.png Graphic file (type png)
+<use figuras/furto-tenis1-ts.png>
+Package pdftex.def Info: figuras/furto-tenis1-ts.png  used on input line 883.
+(pdftex.def)             Requested size: 455.0pt x 329.67923pt.
+<figuras/furto-tenis2-ts.png, id=469, 752.0597pt x 509.65407pt>
+File: figuras/furto-tenis2-ts.png Graphic file (type png)
+<use figuras/furto-tenis2-ts.png>
+Package pdftex.def Info: figuras/furto-tenis2-ts.png  used on input line 890.
+(pdftex.def)             Requested size: 455.0pt x 308.35332pt.
+
+LaTeX Warning: Reference `fig:furto-celular-i3d' on page 48 undefined on input line 895.
+
+
+LaTeX Warning: Reference `fig:furto-pc-i3d' on page 48 undefined on input line 895.
+
+<figuras/furto-celular-i3d.png, id=470, 877.77937pt x 571.38469pt>
+File: figuras/furto-celular-i3d.png Graphic file (type png)
+<use figuras/furto-celular-i3d.png>
+Package pdftex.def Info: figuras/furto-celular-i3d.png  used on input line 900.
+(pdftex.def)             Requested size: 455.0pt x 296.18013pt.
+<figuras/furto-pc-i3d.png, id=471, 877.77937pt x 562.35094pt>
+File: figuras/furto-pc-i3d.png Graphic file (type png)
+<use figuras/furto-pc-i3d.png>
+Package pdftex.def Info: figuras/furto-pc-i3d.png  used on input line 907.
+(pdftex.def)             Requested size: 455.0pt x 291.49745pt.
+
+LaTeX Warning: Reference `fig:trechos-roupa' on page 48 undefined on input line 914.
+
+
+LaTeX Warning: Reference `fig:trechos-shopping' on page 48 undefined on input line 914.
+
+<figuras/trechos-roupa.png, id=472, 810.02625pt x 684.30656pt>
+File: figuras/trechos-roupa.png Graphic file (type png)
+<use figuras/trechos-roupa.png>
+Package pdftex.def Info: figuras/trechos-roupa.png  used on input line 919.
+(pdftex.def)             Requested size: 318.47984pt x 269.04346pt.
+<figuras/trechos-shopping.png, id=473, 812.28468pt x 682.80093pt>
+File: figuras/trechos-shopping.png Graphic file (type png)
+<use figuras/trechos-shopping.png>
+Package pdftex.def Info: figuras/trechos-shopping.png  used on input line 927.
+(pdftex.def)             Requested size: 320.06189pt x 269.04346pt.
+
+LaTeX Warning: Reference `fig:furto-tenis1-i3d' on page 48 undefined on input line 932.
+
+
+LaTeX Warning: Reference `fig:furto-supermercado-i3d' on page 48 undefined on input line 932.
+
+[48]
+<figuras/furto-tenis1-i3d.png, id=479, 877.77937pt x 563.85657pt>
+File: figuras/furto-tenis1-i3d.png Graphic file (type png)
+<use figuras/furto-tenis1-i3d.png>
+Package pdftex.def Info: figuras/furto-tenis1-i3d.png  used on input line 937.
+(pdftex.def)             Requested size: 455.0pt x 292.2779pt.
+<figuras/furto-supermercado-i3d.png, id=480, 877.77937pt x 574.39594pt>
+File: figuras/furto-supermercado-i3d.png Graphic file (type png)
+<use figuras/furto-supermercado-i3d.png>
+Package pdftex.def Info: figuras/furto-supermercado-i3d.png  used on input line 944.
+(pdftex.def)             Requested size: 455.0pt x 297.74103pt.
+
+
+LaTeX Warning: Reference `fig:furto-celular-ts' on page 49 undefined on input line 949.
+
+
+LaTeX Warning: Reference `fig:furto-pc-ts' on page 49 undefined on input line 949.
+
+<figuras/furto-celular-ts.png, id=481, 877.77937pt x 571.38469pt>
+File: figuras/furto-celular-ts.png Graphic file (type png)
+<use figuras/furto-celular-ts.png>
+Package pdftex.def Info: figuras/furto-celular-ts.png  used on input line 953.
+(pdftex.def)             Requested size: 455.0pt x 296.18013pt.
+<figuras/furto-pc-ts.png, id=482, 877.77937pt x 571.38469pt>
+File: figuras/furto-pc-ts.png Graphic file (type png)
+<use figuras/furto-pc-ts.png>
+Package pdftex.def Info: figuras/furto-pc-ts.png  used on input line 960.
+(pdftex.def)             Requested size: 455.0pt x 296.18013pt.
+[49 <./figuras/furto-supermercado-ts.png (PNG copy)>] [50 <./figuras/furto-tenis1-ts.png (PNG copy)>] [51 <./figuras/furto-tenis2-ts.png (PNG copy)>] [52 <./figuras/furto-celular-i3d.png (PNG copy)> <./figuras/furto-pc-i3d.png (PNG copy)>] [53 <./figuras/trechos-roupa.png (PNG copy)> <./figuras/trechos-shopping.png (PNG copy)>] [54 <./figuras/furto-tenis1-i3d.png (PNG copy)> <./figuras/furto-supermercado-i3d.png (PNG copy)>] [55 <./figuras/furto-celular-ts.png (PNG copy)> <./figuras/furto-pc-ts.png (PNG copy)>] [56
+
+] (./template.bbl [57]
+bibitemlist
+[58
+
+] [59] [60]) [61]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 1033.
+
+[62
+
+
+]
+Overfull \hbox (7.42322pt too wide) in paragraph at lines 1046--1047
+\T1/lmr/m/n/12 trei-na-mento por meio do \T1/lmtt/m/n/12 Trainer \T1/lmr/m/n/12 da bi-bli-o-teca \T1/lmr/m/it/12 Trans-for-mers \T1/lmr/m/n/12 com \T1/lmtt/m/n/12 CrossEntropyLoss
+ []
+
+(./template.ind) [63
+
+]
+\tf@lof=\write6
+\openout6 = `template.lof'.
+
+\tf@lot=\write7
+\openout7 = `template.lot'.
+
+\tf@toc=\write8
+\openout8 = `template.toc'.
+
+ 
+enddocument/afterlastpage: lastpage setting LastPage.
+(./template.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package lastpage Warning: Rerun to get the references right on input line 1096.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 18318 strings out of 474222
+ 292199 string characters out of 5748733
+ 1945975 words of memory out of 5000000
+ 39977 multiletter control sequences out of 15000+600000
+ 663417 words of font info for 100 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 113i,12n,121p,2040b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (64 pages, 17522122 bytes).
+PDF statistics:
+ 896 PDF objects out of 1000 (max. 8388607)
+ 754 compressed objects within 8 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 576 words of extra memory for PDF output out of 10000 (max. 10000000)
 

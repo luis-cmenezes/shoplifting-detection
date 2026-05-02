@@ -121,19 +121,25 @@ comportamento suspeito no varejo} %TCC
 
 
 \begin{resumo} %TCC:
- % Segundo a \citeonline[3.1-3.2]{NBR6028:2003}, o resumo deve ressaltar o
- % objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
- % destes itens dependem do tipo de resumo (informativo ou indicativo) e do
- % tratamento que cada item recebe no documento original. O resumo deve ser
- % precedido da referência do documento, com exceção do resumo inserido no
- % próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do
- % resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
- % ponto e finalizadas também por ponto.
+
+O presente trabalho aborda o problema crônico das perdas de inventário por furtos no setor varejista, com o objetivo de comparar empiricamente o desempenho de duas arquiteturas de aprendizado profundo na identificação automatizada de comportamentos suspeitos em vídeos: uma Rede Neural Convolucional Tridimensional (I3D) e um Transformador de Visão (TimeSFormer). Para a condução do estudo, a metodologia englobou a construção de um banco de dados próprio através da agregação, filtragem e segmentação de amostras de bases públicas, submetendo os modelos a dezesseis configurações experimentais. Tais experimentos variaram a estratégia de ajuste de pesos, a resolução temporal e o uso de imagens de fluxo óptico combinadas ao padrão de cores convencional. A avaliação incluiu ainda uma simulação de monitoramento contínuo em vídeos reais não editados, utilizando uma abordagem de inferência por janela deslizante. Os resultados demonstram que o ajuste profundo de todos os parâmetros da rede configura uma etapa estritamente essencial para a convergência e o aprendizado em ambas as arquiteturas. O Transformador de Visão alcançou a melhor capacidade de generalização e controle de alarmes falsos no conjunto de teste, com pontuação perfeita de precisão, mas exige um investimento computacional substancialmente maior com elevado tempo de inferência. Em contrapartida, a Rede Neural Convolucional apresentou um comportamento preditivo conservador e com maior tendência a falsos positivos, destacando-se, no entanto, pela alta eficiência e baixa latência em sua execução. Conclui-se que a aplicação mercadológica exige um compromisso técnico direto entre a alta seletividade de modelos baseados em atenção e a escalabilidade e rapidez das redes convolucionais, além de constatar que ambos os sistemas compartilham vulnerabilidades críticas e falhas de detecção frente a oclusões severas e movimentos sutis no ambiente comercial.
 
  \vspace{\onelineskip}
     
  \noindent
  % \textbf{Palavras-chave}: Até, cinco, palavras-chave, separadas, por, vírgulas. %TCC:
+\end{resumo}
+
+\begin{resumo}[Abstract] %TCC:
+ \begin{otherlanguage*}{english}
+
+This work addresses the chronic problem of inventory losses due to theft in the retail sector, aiming to empirically compare the performance of two deep learning architectures for the automated detection of suspicious behavior in videos: a Three-Dimensional Convolutional Neural Network (I3D) and a Vision Transformer (TimeSFormer). To conduct the study, the methodology involved building a proprietary dataset through the aggregation, filtering, and segmentation of samples from public datasets, subjecting the models to sixteen experimental configurations. These experiments varied the weight fine-tuning strategy, temporal resolution, and the use of optical flow images combined with standard RGB inputs. The evaluation also included a simulation of continuous monitoring on real, unedited videos using a sliding window inference approach. The results demonstrate that full fine-tuning of all network parameters is a strictly essential step for convergence and learning in both architectures. The Vision Transformer achieved the best generalization capability and false alarm control on the test set, attaining perfect precision; however, it requires substantially higher computational investment and exhibits high inference time. In contrast, the Convolutional Neural Network showed a more conservative predictive behavior with a greater tendency toward false positives, while standing out for its high efficiency and low latency. It is concluded that practical deployment requires a direct technical trade-off between the high selectivity of attention-based models and the scalability and speed of convolutional networks. Additionally, both systems share critical vulnerabilities and detection failures when faced with severe occlusions and subtle movements in retail environments.
+
+  \vspace{\onelineskip}
+
+  \noindent
+  % \textbf{Keywords}: Up, to, five, keywords, separated, by, commas. %TCC:
+ \end{otherlanguage*}
 \end{resumo}
 
 % ---
@@ -245,9 +251,7 @@ Nos Resultados do Treinamento, são apresentados e discutidos os desempenhos de 
 
 Na Avaliação em Vídeos Reais, apresenta-se a aplicação dos melhores modelos de cada arquitetura em um cenário prático de monitoramento contínuo de fluxo de vídeo, utilizando uma abordagem de inferência por janela deslizante. O desempenho prático é avaliado sobre um conjunto inédito de sete vídeos reais de ocorrências variadas no varejo. A análise revela que o TimeSFormer demonstra maior seletividade e capacidade de sincronização com o exato momento da ocultação , embora sofra com latência em alguns casos. Em contrapartida, o modelo I3D destaca-se na detecção de ações abruptas , mas apresenta uma forte tendência à saturação de probabilidade e falsos positivos gerados pela manipulação legítima de produtos. Por fim, evidencia-se que ambas as arquiteturas compartilham uma limitação crítica: a falha na detecção diante de oclusões severas e movimentos corporais sutis.
 
-Por fim, em Conclusões, <preencher após finalizar>.
-
-
+Por fim, em Conclusões, sintetizam-se os achados empíricos da pesquisa, destacando que o ajuste profundo de todos os pesos da rede foi estritamente essencial para a convergência e o aprendizado eficaz das dinâmicas de furto em ambas as arquiteturas. Confirma-se a superioridade do modelo TimeSFormer na generalização para dados inéditos, alcançando 100\% de precisão e controle superior na redução de alarmes falsos, em contraste com o comportamento conservador e a tendência a falsos positivos do modelo convolucional I3D. Discute-se também o compromisso técnico inerente à aplicação mercadológica, evidenciando que a maior precisão do TimeSFormer exige um investimento computacional substancialmente maior, ao passo que o I3D se destaca pela alta eficiência e baixa latência. O capítulo encerra o trabalho apontando as vulnerabilidades compartilhadas por ambos os modelos frente a oclusões severas e movimentos corporais sutis, além de propor diretrizes para trabalhos futuros, tais como a ampliação do banco de dados com filmagens locais do varejo e a integração com abordagens multimodais baseadas em estimativa de pose esqueletal.
 
 %TCC:
 
@@ -785,7 +789,7 @@ Além do desempenho preditivo, os experimentos foram avaliados sob o viés da vi
 \toprule
 Experimento & Amostras/s & ms/amostra \\
 \midrule
-I3D - Completo / RGB (64 quadros) & 12,57 & 79,53 \\
+I3D - Completo / RGB (64 quadros) & 12,57 & 79,52 \\
 TimeSFormer - SSv2/32f/Completo (32 quadros) & 1,35 & 738,53 \\
 \bottomrule
 \end{tabular}
@@ -794,7 +798,7 @@ TimeSFormer - SSv2/32f/Completo (32 quadros) & 1,35 & 738,53 \\
 
 Em um cenário real de monitoramento, o processamento tende a ocorrer sobre fluxos contínuos de vídeo por meio de janelas temporais deslizantes, nas quais sequências consecutivas de quadros são periodicamente encaminhadas ao modelo. Dessa forma, a análise não depende de clipes previamente segmentados, permitindo que eventos mais longos sejam observados em múltiplas inferências sucessivas ao longo do tempo.
 
-Nessa perspectiva, o modelo I3D apresentou um tempo de 79,53 ms por janela de 64 quadros. O baixo tempo de processamento oferece ampla margem para reduzir o passo entre janelas consecutivas, aumentar a frequência de atualização das predições e escalar a solução para múltiplas câmeras em uma mesma GPU. Tais características tornam a arquitetura particularmente atrativa em ambientes com restrições computacionais ou com demanda por menor latência operacional. O TimeSFormer, por sua vez, alcançou 738,53 ms por janela de 32 quadros. Embora apresente maior custo computacional, o tempo de inferência permanece compatível com aplicações em tempo real para fluxos individuais, especialmente quando associado a estratégias adequadas de amostragem temporal e infraestrutura dimensionada para essa finalidade.
+Nessa perspectiva, o modelo I3D apresentou um tempo de 79,52 ms por janela de 64 quadros. O baixo tempo de processamento oferece ampla margem para reduzir o passo entre janelas consecutivas, aumentar a frequência de atualização das predições e escalar a solução para múltiplas câmeras em uma mesma GPU. Tais características tornam a arquitetura particularmente atrativa em ambientes com restrições computacionais ou com demanda por menor latência operacional. O TimeSFormer, por sua vez, alcançou 738,53 ms por janela de 32 quadros. Embora apresente maior custo computacional, o tempo de inferência permanece compatível com aplicações em tempo real para fluxos individuais, especialmente quando associado a estratégias adequadas de amostragem temporal e infraestrutura dimensionada para essa finalidade.
 
 Em termos práticos, os resultados indicam que ambas as arquiteturas são tecnicamente viáveis para sistemas de monitoramento contínuo, porém com compromissos distintos entre desempenho computacional e capacidade de implantação. O I3D destaca-se pela eficiência e escalabilidade, enquanto o TimeSFormer configura uma alternativa promissora em contextos nos quais maior disponibilidade de recursos computacionais permita explorar seu potencial de modelagem espaço-temporal.
 
@@ -970,6 +974,19 @@ A avaliação em vídeos reais contínuos revelou comportamentos distintos entre
 \end{itemize}
 
 \chapter[Conclusões]{Conclusões}
+
+O presente trabalho abordou um problema crônico para o setor varejista global: a necessidade de identificação automatizada de comportamentos suspeitos e furtos, reduzindo a dependência quase exclusiva e limitante da vigilância humana em CFTV. Neste contexto, o objetivo principal da pesquisa foi executado comparando empiricamente o desempenho de duas arquiteturas distintas de aprendizado profundo na tarefa de modelagem e detecção de anomalias espaço-temporais em vídeos: a RNC 3D (I3D) e o Transformador de Visão (TimeSFormer). Para viabilizar este estudo, o trabalho apresentou a contribuição metodológica de curadoria e de construção de um banco de dados próprio, agregando, filtrando e segmentando amostras das bases públicas DCSASS, Shoplifting Dataset 2.0 e Shoplifting MNNIT.
+
+Através da formulação de dezesseis configurações experimentais, a pesquisa avaliou o impacto de diferentes estratégias de ajuste de pesos, uso de múltiplas modalidades de entrada e diferentes resoluções temporais. A síntese dos resultados obtidos durante o treinamento respondeu ao problema de pesquisa, constatando-se primeiramente que o ajuste profundo de todos os pesos da rede é estritamente essencial para a convergência e o aprendizado eficaz das dinâmicas de furto em ambas as arquiteturas em bancos de dados reduzidos como o construído. Experimentos que limitaram o treinamento apenas à camada classificadora final falharam expressivamente em adaptar as representações visuais ao novo domínio, estacionando em altos patamares de erro mesmo após dezenas de épocas de treinamento. Além disso, demonstrou-se que a inclusão de imagens de fluxo óptico no modelo I3D atua como um mecanismo compensatório relevante apenas quando o extrator de características original é mantido congelado, tornando-se redundante quando a RNC é ajustada por completo.  A avaliação definitiva sobre o conjunto de teste confirmou a superioridade dos mecanismos de atenção global para a compreensão semântica da cena, evidenciando uma importante inversão no ranqueamento de desempenho em relação à fase de validação. A arquitetura TimeSFormer destacou-se por sua notável capacidade de generalização para dados inéditos, alcançando 100\% de precisão, o que denota um controle superior na redução de alarmes falsos, além de obter o melhor F2-Score geral (0,932). Por sua vez, o modelo convolucional I3D exibiu um comportamento preditivo marcadamente conservador, com uma precisão consideravelmente menor (72,3\%), refletindo uma forte tendência em classificar interações normais como ocorrências anômalas.
+
+Essa diferença de comportamentos foi reiterada e aprofundada na etapa de inferência baseada em janela deslizante, que simulou o monitoramento de vídeos reais e contínuos. Nesse cenário extremo, o TimeSFormer provou ser mais seletivo, obtendo êxito ao elevar as probabilidades de anomalia de maneira sincronizada ao exato instante da ocultação dos produtos. Em contrapartida, embora o I3D tenha confirmado sua capacidade de detectar ações abruptas com precisão temporal, o modelo falhou criticamente ao apresentar saturações e falsos positivos contínuos gerados por simples manipulações legítimas de itens, evidenciando a dificuldade da arquitetura convolucional em distinguir a observação normal da intenção ilícita.
+
+Sob a ótica da aplicação mercadológica, o trabalho mapeia o compromisso técnico necessário para a implementação desses sistemas na indústria varejista. Verificou-se que a obtenção da precisão adicional e da seletividade proporcionada pelo TimeSFormer exige um investimento computacional substancialmente maior, com tempo de inferência de 738,53 milissegundos por janela. Já o I3D destaca-se pela alta eficiência e baixa latência (79,52 milissegundos), configurando-se como uma alternativa viável e escalável para ambientes com severas restrições de infraestrutura, desde que sua sensibilidade aos falsos positivos possa ser contornada por lógicas de limiares mais estritas. 
+
+Apesar dos resultados, a pesquisa identifica limitações inerentes aos modelos avaliados. Ambas as arquiteturas compartilham uma vulnerabilidade crítica: a falha completa de detecção diante de oclusões severas na cena (causadas por estantes ou aglomerações) e de movimentos corporais propositalmente sutis. Nestas condições, a ocultação dos membros ou do objeto inibe fortemente a extração das características espaço-temporais essenciais, fazendo com que as probabilidades de comportamento suspeito permaneçam abaixo do limiar de alarme necessário para a discriminação do ato. Além disso, o TimeSFormer demonstrou alguns episódios de latência no alarme e, sob certos arranjos visuais, uma tendência a fixar seu mecanismo de atenção global em elementos contextuais irrelevantes, perdendo sensibilidade para as ações suspeitas.
+
+Como sugestões para estudos futuros, recomenda-se a expansão do banco de dados com filmagens locais que capturem a grande diversidade de iluminação, densidade de clientes e arquiteturas de prateleiras características do varejo brasileiro. Na área experimental, sugere-se a realização de investigações voltadas à otimização fina do treinamento por meio da busca sistemática por melhores hiperparâmetros, com foco especial na calibração da taxa de aprendizado e no seu método de decaimento. Para conferir maior robustez estatística aos resultados e garantir a estabilidade da convergência, recomenda-se a implementação de estratégias de validação cruzada (K-fold) ou métodos de busca em grade, permitindo uma exploração mais granular do espaço de parâmetros. Em termos arquiteturais, a incorporação de abordagens multimodais, em especial a integração com Redes Convolucionais baseadas em estimativa de pose esqueletal, representa um caminho promissor para manter a coerência do rastreamento corporal mesmo quando parte do indivíduo está oclusa.
+
 %TCC:
 
 % \begin{figure}[!ht]
@@ -1008,24 +1025,33 @@ A avaliação em vídeos reais contínuos revelou comportamentos distintos entre
 % ---
 % Inicia os apêndices
 % ---
-% \begin{apendicesenv}
+\begin{apendicesenv}
 
 % Imprime uma página indicando o início dos apêndices
-% \partapendices
+\partapendices
+% ----------------------------------------------------------
+\chapter{Repositórios do Projeto}
+\label{apendice:github}
+% ----------------------------------------------------------
 
-% % ----------------------------------------------------------
-% \chapter{Quisque libero justo}
-% % ----------------------------------------------------------
+O código-fonte, os experimentos e a documentação desenvolvidos neste trabalho encontram-se publicamente disponíveis no GitHub, organizados em três repositórios distintos, cada um responsável por um escopo bem delimitado do projeto.
 
-% \lipsum[50]
+\section*{Organização dos Repositórios}
 
-% % ----------------------------------------------------------
-% \chapter{Coisas que fiz e que achei interessante mas não tanto para entrar no corpo do texto}
-% % ----------------------------------------------------------
-% \lipsum[55-57]
+\begin{itemize}
+    \item \textbf{\href{https://github.com/luis-cmenezes/shoplifting-detection}{shoplifting-detection}}: \textit{monorepo} principal do projeto. Contém os \textit{scripts} centralizados de download e pré-processamento do banco de dados, os \textit{pipelines} de treinamento e validação de ambas as arquiteturas, as configurações dos experimentos via \texttt{config.yaml} e os artefatos gerados (pesos dos modelos e registros de métricas). Inclui os subpacotes \texttt{i3d-shoplifting} e \texttt{timesformer-shoplifting} como dependências locais.
 
-% \end{apendicesenv}
-% % ---
+    \item \textbf{\href{https://github.com/luis-cmenezes/i3d-shoplifting}{i3d-shoplifting}}: subpacote responsável pelo \textit{fine-tuning} do modelo I3D como classificador binário. Implementa a arquitetura I3D em PyTorch puro, os módulos de pré-processamento para extração de quadros RGB e geração de fluxo óptico TV-L1, e o laço de treinamento com \texttt{BCEWithLogitsLoss} e ponderação de classes.
+
+    \item \textbf{\href{https://github.com/luis-cmenezes/timesformer-shoplifting}{timesformer-shoplifting}}: subpacote responsável pelo \textit{fine-tuning} do modelo TimeSFormer como classificador binário. Implementa o \textit{dataset} PyTorch com amostragem temporal via Decord, os utilitários de padronização de vídeo com FFmpeg e o treinamento por meio do \texttt{Trainer} da biblioteca \textit{Transformers} com \texttt{CrossEntropyLoss} e ponderação de classes.
+\end{itemize}
+
+\section*{Gerenciamento de Dependências com UV}
+
+Todos os repositórios adotam a ferramenta \textbf{UV} para o gerenciamento do ambiente Python. O UV é um gerenciador de pacotes e ambientes virtuais de alto desempenho que resolve e instala dependências de forma significativamente mais rápida que as ferramentas tradicionais. A configuração completa do ambiente de cada repositório é declarada no arquivo \texttt{pyproject.toml}, permitindo a reprodução integral do ambiente de desenvolvimento com um único comando.
+
+\end{apendicesenv}
+% ---
 
 
 % % ----------------------------------------------------------
