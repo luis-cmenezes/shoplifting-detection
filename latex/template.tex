@@ -126,7 +126,7 @@ comportamento suspeito no varejo} %TCC
 
 \begin{resumo} %TCC:
 
-O presente trabalho aborda o problema crônico das perdas de inventário por furtos no setor varejista, com o objetivo de comparar empiricamente o desempenho de duas arquiteturas de aprendizado profundo na identificação automatizada de comportamentos suspeitos em vídeos: uma Rede Neural Convolucional Tridimensional (I3D) e um Transformador de Visão (TimeSFormer). Para a condução do estudo, a metodologia englobou a construção de um banco de dados próprio através da agregação, filtragem e segmentação de amostras de bases públicas, submetendo os modelos a dezesseis configurações experimentais. Tais experimentos variaram a estratégia de ajuste de pesos, a resolução temporal e o uso de imagens de fluxo óptico combinadas ao padrão de cores convencional. A avaliação incluiu ainda uma simulação de monitoramento contínuo em vídeos reais não editados, utilizando uma abordagem de inferência por janela deslizante. Os resultados demonstram que o ajuste profundo de todos os parâmetros da rede configura uma etapa estritamente essencial para a convergência e o aprendizado em ambas as arquiteturas. O Transformador de Visão alcançou a melhor capacidade de generalização e controle de alarmes falsos no conjunto de teste, com pontuação perfeita de precisão, mas exige um investimento computacional substancialmente maior com elevado tempo de inferência. Em contrapartida, a Rede Neural Convolucional apresentou um comportamento preditivo conservador e com maior tendência a falsos positivos, destacando-se, no entanto, pela alta eficiência e baixa latência em sua execução. Conclui-se que a aplicação mercadológica exige um compromisso técnico direto entre a alta seletividade de modelos baseados em atenção e a escalabilidade e rapidez das redes convolucionais, além de constatar que ambos os sistemas compartilham vulnerabilidades críticas e falhas de detecção frente a oclusões severas e movimentos sutis no ambiente comercial.
+O presente trabalho aborda o problema crônico das perdas de inventário por furtos no setor varejista, com o objetivo de comparar empiricamente o desempenho de duas conhecidas arquiteturas de aprendizado profundo na identificação automatizada de comportamentos suspeitos em vídeos: uma Rede Neural Convolucional Tridimensional (I3D) e um Transformador de Visão (TimeSFormer). Para a condução do estudo, a metodologia englobou a construção de um banco de dados próprio através da agregação, filtragem e segmentação de amostras de bases públicas, submetendo os modelos a dezesseis configurações experimentais. Tais experimentos variaram a estratégia de ajuste de pesos, a resolução temporal e o uso de imagens de fluxo óptico combinadas ao padrão de cores convencional. A avaliação incluiu ainda uma simulação de monitoramento contínuo em vídeos reais não editados, utilizando uma abordagem de inferência por janela deslizante. Os resultados demonstram que o ajuste profundo de todos os parâmetros da rede configura uma etapa estritamente essencial para a convergência e o aprendizado em ambas as arquiteturas. O Transformador de Visão alcançou a melhor capacidade de generalização e controle de alarmes falsos no conjunto de teste, mas exige um investimento computacional substancialmente maior com elevado tempo de inferência. Em contrapartida, a Rede Neural Convolucional apresentou um comportamento preditivo conservador e com maior tendência a falsos positivos, destacando-se, no entanto, pela alta eficiência e baixa latência em sua execução. Conclui-se que a aplicação mercadológica exige um compromisso técnico direto entre a alta seletividade de modelos baseados em atenção e a escalabilidade e rapidez das redes convolucionais, além de constatar que ambos os sistemas compartilham vulnerabilidades críticas e falhas de detecção frente a oclusões severas e movimentos sutis no ambiente comercial.
 
  \vspace{\onelineskip}
     
@@ -171,21 +171,21 @@ This work addresses the chronic problem of inventory losses due to theft in the 
 \item[CFTV] Circuito Fechado de Televisão
 \item[IA] Inteligência Artificial
 \item[RNC] Rede Neural Convolucional
-\item[GPU] Graphics Processing Unit
-\item[ViT] Vision Transformer
-\item[ML] Machine Learning
-\item[DL] Deep Learning
-\item[SL] Supervised Learning
-\item[RGB] Red, Green, Blue
-\item[I3D] Inflated 3D ConvNet
-\item[K400] Kinetics-400
-\item[SSv2] Something-Something V2
-\item[BCE] Binary Cross-Entropy
-\item[CEL] Cross-Entropy Loss
-\item[AUC-ROC] Area Under the Receiver Operating Characteristic Curve
-\item [FPS] Frames Per Second
-\item [Adam] Adaptive Moment Estimation
-\item [AdamW] Adam with Decoupled Weight Decay
+\item[GPU] \textit{Graphics Processing Unit}
+\item[ViT] \textit{Vision Transformer}
+\item[ML] \textit{Machine Learning}
+\item[DL] \textit{Deep Learning}
+\item[SL] \textit{Supervised Learning}
+\item[RGB] \textit{Red, Green, Blue}
+\item[I3D] \textit{Inflated 3D ConvNet}
+\item[K400] \textit{Kinetics-400}
+\item[SSv2] \textit{Something-Something V2}
+\item[BCE] \textit{Binary Cross-Entropy}
+\item[CEL] \textit{Cross-Entropy Loss}
+\item[AUC-ROC] \textit{Area Under the Receiver Operating Characteristic Curve}
+\item [FPS] \textit{Frames Per Second}
+\item [Adam] \textit{Adaptive Moment Estimation}
+\item [AdamW] \textit{Adam with Decoupled Weight Decay}
 \end{siglas}
 % ---
 
@@ -979,7 +979,7 @@ A avaliação em vídeos reais contínuos revelou comportamentos distintos entre
 
 \chapter[Conclusões]{Conclusões}
 
-O presente trabalho abordou um problema crônico para o setor varejista global: a necessidade de identificação automatizada de comportamentos suspeitos e furtos, reduzindo a dependência quase exclusiva e limitante da vigilância humana em CFTV. Neste contexto, o objetivo principal da pesquisa foi executado comparando empiricamente o desempenho de duas arquiteturas distintas de aprendizado profundo na tarefa de modelagem e detecção de anomalias espaço-temporais em vídeos: a RNC 3D (I3D) e o Transformador de Visão (TimeSFormer). Para viabilizar este estudo, o trabalho apresentou a contribuição metodológica de curadoria e de construção de um banco de dados próprio, agregando, filtrando e segmentando amostras das bases públicas DCSASS, Shoplifting Dataset 2.0 e Shoplifting MNNIT.
+O presente trabalho abordou um problema crônico para o setor varejista global: a necessidade de identificação automatizada de comportamentos suspeitos e furtos, reduzindo a dependência quase exclusiva e limitante da vigilância humana em CFTVs. Neste contexto, o objetivo principal da pesquisa foi executado comparando empiricamente o desempenho de duas arquiteturas distintas de aprendizado profundo na tarefa de modelagem e detecção de anomalias espaço-temporais em vídeos: a RNC 3D (I3D) e o Transformador de Visão (TimeSFormer). Para viabilizar este estudo, o trabalho apresentou a contribuição metodológica de curadoria e de construção de um banco de dados próprio, agregando, filtrando e segmentando amostras das bases públicas DCSASS, Shoplifting Dataset 2.0 e Shoplifting MNNIT.
 
 Através da formulação de dezesseis configurações experimentais, a pesquisa avaliou o impacto de diferentes estratégias de ajuste de pesos, uso de múltiplas modalidades de entrada e diferentes resoluções temporais. A síntese dos resultados obtidos durante o treinamento respondeu ao problema de pesquisa, constatando-se primeiramente que o ajuste profundo de todos os pesos da rede é estritamente essencial para a convergência e o aprendizado eficaz das dinâmicas de furto em ambas as arquiteturas em bancos de dados reduzidos como o construído. Experimentos que limitaram o treinamento apenas à camada classificadora final falharam expressivamente em adaptar as representações visuais ao novo domínio, estacionando em altos patamares de erro mesmo após dezenas de épocas de treinamento. Além disso, demonstrou-se que a inclusão de imagens de fluxo óptico no modelo I3D atua como um mecanismo compensatório relevante apenas quando o extrator de características original é mantido congelado, tornando-se redundante quando a RNC é ajustada por completo.  A avaliação definitiva sobre o conjunto de teste confirmou a superioridade dos mecanismos de atenção global para a compreensão semântica da cena, evidenciando uma importante inversão no ranqueamento de desempenho em relação à fase de validação. A arquitetura TimeSFormer destacou-se por sua notável capacidade de generalização para dados inéditos, alcançando 100\% de precisão, o que denota um controle superior na redução de alarmes falsos, além de obter o melhor F2-Score geral (0,932). Por sua vez, o modelo convolucional I3D exibiu um comportamento preditivo marcadamente conservador, com uma precisão consideravelmente menor (72,3\%), refletindo uma forte tendência em classificar interações normais como ocorrências anômalas.
 
