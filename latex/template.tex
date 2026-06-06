@@ -19,7 +19,7 @@ brazil]{facom-ufu-abntex2}
 
 \autor{Luis Felipe Costa Fernandes de Menezes} %TCC
 \data{2026}
-\orientador{Pedro Augusto Queiroz de Assis} %TCC
+\orientador{Prof. Dr. Pedro Augusto Queiroz de Assis} %TCC
 %\coorientador{Algum?} %TCC
 
 % ---
@@ -71,8 +71,8 @@ comportamento suspeito no varejo} %TCC
    Trabalho aprovado. \imprimirlocal, 21 de maio de 2026: %TCC:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador}  
-   \assinatura{\textbf{Professor}}% \\ Convidado 1} %TCC:
-   \assinatura{\textbf{Professor}}% \\ Convidado 2} %TCC:
+   \assinatura{\textbf{Prof. Dr. Fernando Lourenço de Souza}}% \\ Convidado 1} %TCC:
+   \assinatura{\textbf{Dr. Arthur Pereira Borges}}% \\ Convidado 2} %TCC:
    %\assinatura{\textbf{Professor} \\ Convidado 3}
    %\assinatura{\textbf{Professor} \\ Convidado 4}
       
@@ -106,9 +106,21 @@ comportamento suspeito no varejo} %TCC
 % ---
 % Agradecimentos
 % ---
-%\begin{agradecimentos}
-%Agradeço a \lipsum[30]. %TCC:
-%\end{agradecimentos}
+
+\begin{agradecimentos}
+Gostaria de agradecer à Universidade Federal de Uberlândia pela oportunidade de realizar minha formação em uma instituição de excelência. Agradeço também à Faculdade de Engenharia Mecânica e ao Curso de Engenharia Mecatrônica, pela infraestrutura disponibilizada, pelos recursos oferecidos e pelo corpo docente altamente qualificado, que desempenhou papel essencial em minha trajetória universitária. 
+
+Agradeço especialmente ao Prof. Dr. Pedro Augusto Queiroz Assis, não apenas pela paciência e dedicação na orientação deste trabalho, mas também por sua atuação exemplar como professor. Seu profissionalismo e comprometimento com o ensino certamente se tornaram uma grande referência para mim.
+
+Expresso minha profunda gratidão à minha família, por todo o apoio e carinho ao longo dessa jornada. Em especial, aos meus pais, Enedina e Edilson, que sempre foram e continuam sendo minha base para tudo. Essa trajetória definitivamente não foi fácil, mas só foi possível graças aos esforços, à confiança e ao amor de vocês.
+
+Sou grato também a todos os meus amigos, que tornaram essa caminhada mais leve. Cada conversa, momento de descontração e incentivo foi extremamente importante. Em especial, agradeço a Jorge, Nicholas e Sofia, que estiveram presentes de forma marcante ao longo dessa etapa.
+
+Por fim, deixo meu agradecimento à EDROM e e a todos os colegas da equipe. Foi por meio dessa experiência que passei a me identificar de forma mais concreta com o curso e com a carreira que desejo seguir, além de encontrar um ótimo ambiente de aprendizado.
+
+A todos que, de alguma forma, contribuíram para esta conquista, deixo meu mais sincero muito obrigado!
+
+\end{agradecimentos}
 % ---
 
 % ---
@@ -223,6 +235,7 @@ This work addresses the chronic problem of inventory losses due to theft in the 
 % ----------------------------------------------------------
 
 \chapter[Introdução]{Introdução}
+\label{chap:introducao}
 O setor varejista global enfrenta um desafio crônico que diminui suas margens de lucro e afeta a sustentabilidade de suas operações: as perdas de inventário por furto. O alto fluxo de indivíduos em ambientes comerciais de livre acesso cria um ecossistema suscetível a esse tipo de conduta. Em escala global, a National Retail Federation reportou um aumento de 93\% nos incidentes de furtos em 2024 em relação aos níveis de 2019, resultando em perdas financeiras anuais que ultrapassam dezenas de bilhões de dólares e forçando as empresas a repensarem ativamente suas estratégias de segurança \cite{nrf}. No contexto nacional, ações ilícitas geram impactos de tal magnitude nas receitas das empresas do setor que em 2023 foi observado um aumento de 27\%, em relação ao ano anterior, no número de empresas que possuem áreas dedicadas à prevenção de perdas, totalizando 95\% de todas as empresas analisadas \cite{abrappe2024}.
 
 As áreas dedicadas à prevenção de perdas atuam no monitoramento e mitigação de diferentes fontes de prejuízo, incluindo quebras operacionais, furtos externos, furtos internos, erros de inventário e fraudes. Em particular, os furtos configuram-se como a segunda maior causa de perdas no varejo, correspondendo a aproximadamente 31\% dos R\$34,9 bilhões em prejuízos registrados no ano analisado \cite{abrappe2024}, justificando investimentos maciços em segurança. Nesse sentido, agentes de vigilância constituem um componente essencial na proteção do setor varejista, sendo que uma parcela significativa dos investimentos em prevenção de perdas é direcionada a esses funcionários \cite{efforts}.
@@ -247,13 +260,15 @@ Para a condução das comparações, estruturou-se um conjunto de dados próprio
 
 Além disso, adaptaram-se ambos os modelos por meio de \textit{transfer learning}, com a substituição da camada final de classificação por uma cabeça binária treinada para distinguir entre as classes “\textit{Shoplifting}” (possível furto) e “Normal” em vídeos reais de vigilância varejista. Os modelos são treinados sobre o conjunto de dados específico da tarefa, considerando diferentes estratégias de ajuste dos parâmetros, incluindo o treinamento apenas da camada classificadora e o \textit{fine-tuning} completo da rede. Para então, finalmente, serem avaliados em um conjunto de teste em comum. A comparação é feita com base no \textit{F2-Score}, uma variação da medida F que atribui um peso maior à revocação em comparação à precisão \cite{f2}, pois, no cenário varejista, falsos negativos são mais críticos que falsos positivos, considerando um avaliador intermediário humano.
 
-O presente trabalho divide-se em seis capítulos, além desta introdução. Na Fundamentação Teórica, apresentam-se os conceitos de Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo, avançando para classificação binária e modelagem espaço-temporal em imagens e vídeos. Em seguida, são descritas as arquiteturas I3D e TimeSFormer, bem como as técnicas de treinamento, funções de perda e métricas de avaliação.
+O presente trabalho divide-se em sete capítulos, além desta introdução. Na Fundamentação Teórica, apresentam-se os conceitos de Inteligência Artificial, Aprendizado de Máquina e Aprendizado Profundo, avançando para classificação binária e modelagem espaço-temporal em imagens e vídeos. Em seguida, são descritas as arquiteturas I3D e TimeSFormer, bem como as técnicas de treinamento, funções de perda e métricas de avaliação.
 
 No Banco de Dados, descreve-se o processo de construção do conjunto de dados utilizado neste trabalho, incluindo a agregação de diferentes bases públicas, as etapas de curadoria, filtragem e segmentação dos vídeos, bem como a caracterização final do conjunto em termos de distribuição de classes e duração. Adicionalmente, são apresentados os procedimentos de pré-processamento, as técnicas de aumento de dados empregadas e a estratégia de divisão em subconjuntos de treinamento, validação e teste, visando garantir a representatividade e a confiabilidade das avaliações realizadas.
 
 Nos Resultados do Treinamento, são apresentados e discutidos os desempenhos de 16 configurações experimentais de \textit{fine-tuning} para as arquiteturas I3D e TimeSFormer. O capítulo demonstra empiricamente que o ajuste profundo de todos os pesos da rede é estritamente essencial para a convergência do aprendizado nesta tarefa. A análise compara o comportamento dos modelos nos conjuntos de validação e teste, evidenciando um claro compromisso entre custo computacional e capacidade de generalização. Enquanto o modelo I3D destaca-se pelo baixo tempo de inferência, o TimeSFormer alcança o melhor desempenho preditivo global, obtendo 100\% de precisão no conjunto de teste e demonstrando controle superior na redução de falsos positivos em cenários inéditos.
 
 Na Avaliação em Vídeos Reais, apresenta-se a aplicação dos melhores modelos de cada arquitetura em um cenário prático de monitoramento contínuo de fluxo de vídeo, utilizando uma abordagem de inferência por janela deslizante. O desempenho prático é avaliado sobre um conjunto inédito de sete vídeos reais de ocorrências variadas no varejo. A análise revela que o TimeSFormer demonstra maior seletividade e capacidade de sincronização com o exato momento da ocultação , embora sofra com latência em alguns casos. Em contrapartida, o modelo I3D destaca-se na detecção de ações abruptas , mas apresenta uma forte tendência à saturação de probabilidade e falsos positivos gerados pela manipulação legítima de produtos. Por fim, evidencia-se que ambas as arquiteturas compartilham uma limitação crítica: a falha na detecção diante de oclusões severas e movimentos corporais sutis.
+
+Na Avaliação de Implementação em Cenário Real, apresenta-se um estudo de viabilidade técnica e financeira para a implantação do sistema proposto em um ambiente varejista padrão. O capítulo detalha o dimensionamento da infraestrutura de captação de imagens e a modelagem da demanda computacional para inferência contínua, transpondo o custo de processamento do modelo TimeSFormer para requisitos reais de \textit{hardware} (GPUs). Por fim, realiza-se uma projeção econômica que contrapõe os custos estimados de aquisição dos equipamentos à perspectiva de redução de perdas financeiras geradas por furtos, demonstrando o potencial de retorno sobre o investimento e a viabilidade prática da solução.
 
 Por fim, em Conclusões, sintetizam-se os achados empíricos da pesquisa, destacando que o ajuste profundo de todos os pesos da rede foi estritamente essencial para a convergência e o aprendizado eficaz das dinâmicas de furto em ambas as arquiteturas. Confirma-se a superioridade do modelo TimeSFormer na generalização para dados inéditos, alcançando 100\% de precisão e controle superior na redução de alarmes falsos, em contraste com o comportamento conservador e a tendência a falsos positivos do modelo convolucional I3D. Discute-se também o compromisso técnico inerente à aplicação mercadológica, evidenciando que a maior precisão do TimeSFormer exige um investimento computacional substancialmente maior, ao passo que o I3D se destaca pela alta eficiência e baixa latência. O capítulo encerra o trabalho apontando as vulnerabilidades compartilhadas por ambos os modelos frente a oclusões severas e movimentos corporais sutis, além de propor diretrizes para trabalhos futuros, tais como a ampliação do banco de dados com filmagens locais do varejo e a integração com abordagens multimodais baseadas em estimativa de pose esqueletal.
 
@@ -751,7 +766,7 @@ A fim de estabelecer o melhor representante de cada arquitetura, a \autoref{fig:
 
 
 \section[Desempenho no Conjunto de Teste]{Desempenho no Conjunto de Teste}
-
+\label{sec:test_performance}
 A avaliação definitiva foi conduzida através da inferência com o melhor modelo de cada arquitetura no conjunto de teste composto por 83 amostras inéditas (47 da classe \textit{Normal} e 36 da classe \textit{Shoplifting}). Os resultados reportados na \autoref{tab:test_metrics} demonstram uma inversão no ranqueamento de desempenho em relação à fase de validação. Embora a avaliação do domínio priorize a revocação por meio do F2-Score, destaca-se que o modelo TimeSFormer (SSv2 / 32 quadros / Completo) também alcançou uma precisão de 100\%, evidenciando maior especificidade e um controle sobre os falsos positivos. Em contraste, o I3D (Completo / RGB) apresentou precisão de 72,3\%, indicando um viés mais conservador na tomada de decisão, com maior tendência a classificar amostras normais como casos anômalos. Já a diferença em revocação entre os modelos foi consideravelmente menor, de apenas 2,7\%, o que levou o TimeSFormer ao melhor resultado geral na avaliação final.
 
 \begin{table}[htbp]
@@ -781,7 +796,7 @@ As matrizes de confusão na \autoref{fig:test_confusion} detalham quantitativame
 \end{figure}
 
 \section[Eficiência]{Eficiência}
-
+\label{sec:efficiency}
 Além do desempenho preditivo, os experimentos foram avaliados sob o viés da viabilidade prática considerando o tempo de inferência. A \autoref{tab:throughput} apresenta a taxa de transferência (\textit{throughput}) e o tempo de execução (\textit{runtime}) para uma configuração realista de implementação com uma GTX 1660 Super, utilizando lote unitário e entradas sintéticas aleatórias, de modo a evitar otimizações específicas de \textit{cache} ou carregamento de dados.
 
 \begin{table}[htbp]
@@ -819,6 +834,7 @@ A condução e análise empírica dos 16 experimentos permite consolidar as segu
 \end{enumerate}
 
 %TCC:
+
 \chapter[Avaliação em Vídeos Reais]{Avaliação em Vídeos Reais}
 Os experimentos apresentados no capítulo anterior foram realizados exclusivamente com amostras do conjunto de dados agregado. Embora esse procedimento permita o treinamento e a comparação controlada entre arquiteturas, as condições típicas de monitoramento reais não são reproduzidas, pois - na prática - o modelo processa um fluxo contínuo de vídeo com duração indefinida. É importante ressaltar que esse tipo de vídeo real não foi utilizado na etapa de treinamento, o que configura o cenário atual como um caso extremo de avaliação para a capacidade de generalização dos modelos treinados. Nesse contexto, a avaliação demanda uma estratégia de inferência diferente da utilizada no treinamento, em que cada entrada corresponde a um clipe de duração fixa com rótulo único. Para lidar com essa diferença, adota-se uma abordagem baseada em janela deslizante, com agregação temporal por quadro, descrita a seguir.
 
@@ -977,6 +993,175 @@ A avaliação em vídeos reais contínuos revelou comportamentos distintos entre
 \item \textbf{Vulnerabilidade Compartilhada a Oclusões Severas:} As duas arquiteturas falharam na detecção em cenários marcados por oclusões severas e ações corporais de baixa magnitude visual. Quando a ação era demasiadamente oclusa, os modelos eram inibidos de extrair as características espaço-temporais indispensáveis, mantendo as probabilidades de alarme significativamente abaixo do necessário para discriminação do ato.
 \end{itemize}
 
+\chapter[Avaliação de Implementação em Cenário Real]{Avaliação de Implementação em Cenário Real}
+Para estruturar esta avaliação de viabilidade com rigor técnico e financeiro, a análise é decomposta em etapas fundamentais.
+Inicialmente, realiza-se o levantamento do panorama financeiro atual e do histórico de perdas no varejo alimentar brasileiro, baseando-se em indicativos recentes do setor.
+Sob a caracterização física de um supermercado de médio porte padronizado, executa-se o dimensionamento da rede de câmeras IP necessária para a cobertura espacial abrangente do ambiente.
+Posteriormente, elabora-se a modelagem matemática da carga computacional contínua gerada pela inferência, transpondo os resultados experimentais para um dimensionamento de servidores dotados de GPUs.
+Por fim, realiza-se a projeção percentual e monetária de perdas evitáveis contraposta ao custo total de aquisição e operação do hardware, obtendo a estimativa do período de recuperação do capital.
+
+\section[Panorama de Perdas no Varejo Alimentar Brasileiro]{Panorama de Perdas no Varejo Alimentar Brasileiro}
+\label{sec:estimativa_perdas}
+Considerando um supermercado de médio porte com faturamento anual próximo de R\$ 90 milhões, observa-se um volume médio de perdas de aproximadamente R\$ 57.875 por mês, equivalente a cerca de R\$ 694 mil por ano, ou 0,76\% do faturamento anual \cite{aires2026}.
+
+Embora as perdas de inventário englobem diversas categorias, como avarias, vencimentos, erros operacionais e divergências de estoque, os furtos internos e externos figuram entre as principais causas registradas pelo setor supermercadista, sendo responsáveis por aproximadamente 20\% a 35\% do total de perdas \cite{abras_perdas}.
+
+Aplicando essa proporção ao cenário considerado, estima-se que as perdas anuais associadas a furtos situem-se entre R\$ 139 mil e R\$ 243 mil. Em termos relativos ao faturamento do estabelecimento, esse montante corresponde a aproximadamente 0,15\% a 0,27\% da receita anual.
+
+Essa faixa de valores será utilizada nas próximas seções como referência para estimar o montante financeiro potencialmente recuperável por meio da redução de ocorrências de furto.
+
+\section[Dimensionamento da Infraestrutura de Captação]{Dimensionamento da Infraestrutura de Captação}
+
+Para estimar os requisitos computacionais de uma solução de detecção automática de furtos baseada em vídeo, é necessário inicialmente estabelecer uma infraestrutura de captação compatível com a cobertura integral do ambiente monitorado. Nesta análise, considera-se um supermercado de médio porte com área de vendas aproximada de 1000 m$^2$.
+
+Diferentemente de aplicações convencionais de vigilância patrimonial, sistemas voltados à análise comportamental dependem da observação contínua das interações entre clientes e produtos ao longo dos corredores de circulação. Em ambientes supermercadistas, a presença de gôndolas e prateleiras com alturas elevadas reduz significativamente o campo de visão efetivo das câmeras e cria regiões suscetíveis a oclusões. Dessa forma, a cobertura do ambiente demanda não apenas a observação dos acessos principais, mas também o monitoramento dos corredores de venda e das áreas de maior concentração de mercadorias.
+
+Para fins de estimativa, adota-se uma densidade de implantação correspondente a aproximadamente uma câmera para cada 15 a 20 m$^2$ de área monitorada. Essa faixa é compatível com projetos de CFTV que buscam cobertura abrangente dos corredores e sobreposição parcial entre campos de visão adjacentes.
+
+Considerando uma área total de 1000 m$^2$, obtém-se:
+
+\begin{equation}
+N_{cam} = \frac{A}{A_{cam}}
+\end{equation}
+
+onde $A$ representa a área monitorada e $A_{cam}$ a área efetivamente coberta por cada câmera. Assumindo uma cobertura média de aproximadamente 16 m$^2$ por dispositivo, resulta:
+
+\begin{equation}
+N_{cam} = \frac{1000}{16} \approx 62,5
+\end{equation}
+
+Arredondando para um valor inteiro e considerando áreas adicionais como entradas, saídas, região de caixas e setores de maior risco operacional, adota-se como referência uma infraestrutura composta por aproximadamente 64 câmeras IP.
+
+Uma vez estabelecida a infraestrutura de captação, o problema pode ser reinterpretado sob a perspectiva computacional. Cada uma das 64 câmeras IP instaladas produz um fluxo de vídeo contínuo e independente, potencialmente sujeito à análise automatizada por algoritmos de detecção de furtos.
+
+Dessa forma, a carga computacional total do sistema não depende apenas das características individuais dos modelos de inteligência artificial avaliados neste trabalho, mas também da quantidade de fluxos simultâneos que devem ser processados. Em outras palavras, a infraestrutura de inferência deve ser capaz de executar continuamente o processamento de aproximadamente 64 canais de vídeo em paralelo.
+
+Consequentemente, o dimensionamento computacional pode ser obtido a partir da capacidade de processamento por fluxo observada experimentalmente para o modelo TimeSFormer, extrapolando-se esse resultado para o conjunto completo de câmeras necessário para cobertura do ambiente monitorado. A próxima seção apresenta essa modelagem e a conversão da demanda de inferência em requisitos de hardware.
+
+\section[Dimensionamento da Demanda de Inferência e Custos]{Dimensionamento da Demanda de Inferência e Custos}
+\label{sec:estimativa_investimento}
+Uma vez estabelecida a necessidade de monitoramento de aproximadamente 64 câmeras IP para cobertura integral de um supermercado de médio porte, torna-se possível converter a demanda operacional do sistema em requisitos concretos de processamento computacional. Conforme discutido na \autoref{sec:test_performance}, o melhor modelo obtido neste trabalho foi o TimeSFormer pré-treinado no banco de dados SSv2 com entrada de 32 quadros e ajuste completo dos parâmetros, alcançando o maior F2-Score no conjunto de teste, considerando que o objetivo desta análise consiste em dimensionar a infraestrutura necessária para o melhor modelo obtido, adota-se esse TimeSFormer como referência.
+
+Os experimentos de eficiência, na \autoref{sec:efficiency}, demonstraram que o TimeSFormer executa aproximadamente 1,35 inferências por segundo em uma GPU GTX 1660 Super, correspondendo a um tempo médio de 738,53 ms para processar uma única janela de vídeo composta por 32 quadros.
+
+A GTX 1660 Super utilizada nos experimentos possui desempenho teórico próximo de 5 TFLOPS em operações FP32. Dessa forma, pode-se estimar a demanda computacional associada a uma única inferência do modelo através da relação entre o desempenho disponível e o tempo efetivamente consumido durante a execução:
+
+\begin{equation}
+C_{inf}=P \cdot t
+\end{equation}
+
+onde $P$ representa a capacidade computacional da GPU (em TFLOPS) e $t$ o tempo médio de inferência (em segundos).
+
+Substituindo os valores experimentais:
+
+\begin{equation}
+C_{inf}=5 \times 0,73853
+\end{equation}
+
+\begin{equation}
+C_{inf}\approx 3,69\ \text{TFLOP}
+\end{equation}
+
+Portanto, cada janela processada pelo TimeSFormer demanda aproximadamente 3,69 TFLOP de processamento.
+
+Assumindo o cenário conservador em que as 64 câmeras instaladas estejam simultaneamente produzindo atividade relevante e necessitem ser analisadas continuamente, a carga computacional total torna-se:
+
+\begin{equation}
+C_{total}=64 \times 3,69
+\end{equation}
+
+\begin{equation}
+C_{total}\approx 236 \text{ TFLOP}
+\end{equation}
+
+Este valor representa a capacidade computacional necessária para sustentar o processamento simultâneo dos fluxos de vídeo no mesmo intervalo temporal observado experimentalmente.
+
+Atualmente, aceleradores de inferência voltados à inteligência artificial disponíveis comercialmente apresentam desempenho significativamente superior ao hardware utilizado durante os experimentos. Como referência, uma GPU NVIDIA RTX 5090 disponibiliza aproximadamente 105 TFLOPS em precisão FP32, enquanto uma RTX 5080 disponibiliza cerca de 56 TFLOPS.
+
+Dessa forma, o processamento completo da loja poderia ser atendido por diferentes configurações equivalentes de hardware, tais como:
+
+\begin{itemize}
+\item 3 GPUs RTX 5090 ($3 \times 105 \approx 315$ TFLOPS);
+\item 5 GPUs RTX 5080 ($5 \times 56 \approx 280$ TFLOPS);
+\item infraestrutura distribuída composta por múltiplos servidores menores.
+\end{itemize}
+
+Sob a perspectiva econômica, considerando valores praticados no mercado brasileiro durante 2026, uma RTX 5090 possui custo aproximado entre R\$ 18.000 e R\$ 22.000. Assim, uma infraestrutura baseada em três placas totalizaria investimento próximo de R\$ 60.000, desconsiderando os demais componentes do servidor.
+
+Incluindo processador, memória, armazenamento, sistema de alimentação redundante e margem para expansão futura, o custo total de implantação da infraestrutura de inferência situa-se tipicamente entre R\$ 70.000 e R\$ 90.000 para uma unidade varejista de aproximadamente 1000 m\textsuperscript{2}.
+
+É importante destacar que esta estimativa representa um cenário deliberadamente conservador, no qual todas as câmeras são processadas continuamente e de forma independente. Na prática, mecanismos de otimização podem reduzir substancialmente a demanda computacional. Entre eles destacam-se o processamento em lote, a redução da frequência de inferência em áreas de baixo risco, a utilização de detectores de movimento para ativação seletiva do modelo e a execução distribuída em múltiplos períodos temporais. Consequentemente, o custo real de implantação tende a ser inferior ao valor estimado nesta análise.
+
+\section[Estimativa de Redução de Perdas e Retorno Sobre o Investimento]{Estimativa de Redução de Perdas e Retorno Sobre o Investimento}
+
+A etapa final desta análise consiste em converter os resultados de desempenho obtidos experimentalmente em uma estimativa econômica para um cenário real de operação.
+
+Conforme discutido no \autoref{chap:introducao}, estudos sobre monitoramento por CFTV indicam que operadores humanos podem falhar na identificação de até 66\% dos eventos críticos presentes em seu campo de visão. Em outras palavras, mesmo em ambientes monitorados, apenas aproximadamente 34\% das ocorrências potencialmente observáveis tendem a ser efetivamente identificadas em tempo real.
+
+Por sua vez, o melhor modelo obtido neste trabalho, o TimeSFormer pré-treinado no banco de dados SSv2 com entrada de 32 quadros e ajuste completo dos parâmetros, alcançou revocação de 91,7\% no conjunto de teste. Como a revocação representa a proporção de furtos corretamente identificados pelo sistema, este valor pode ser interpretado como a capacidade potencial de detecção automática do modelo.
+
+Assumindo que a taxa de falha humana e a taxa de revocação do modelo sejam representativas do ambiente operacional, a diferença entre ambos corresponde ao percentual adicional de ocorrências passíveis de identificação:
+
+\begin{equation}
+\Delta D = 91,7\% - 34,0\%
+\end{equation}
+
+\begin{equation}
+\Delta D = 57,7\%
+\end{equation}
+
+Assim, o sistema proposto possui potencial para identificar 57,7\% mais ocorrências de furto do que o monitoramento exclusivamente humano.
+
+Na \autoref{sec:estimativa_perdas}, foi estimado que um supermercado de médio porte apresenta perdas anuais associadas a furtos entre R\$139 mil e R\$243 mil. Considerando que a redução de perdas seja proporcional ao aumento da capacidade de detecção, obtém-se uma estimativa conservadora do valor recuperável:
+
+\begin{equation}
+G_{min}=0,577 \times 139.000
+\end{equation}
+
+\begin{equation}
+G_{min}\approx R\$80.200/ano
+\end{equation}
+
+e
+
+\begin{equation}
+G_{max}=0,577 \times 243.000
+\end{equation}
+
+\begin{equation}
+G_{max}\approx R\$140.200/ano
+\end{equation}
+
+Portanto, a implantação do sistema possui potencial para reduzir perdas financeiras em aproximadamente R\$80 mil a R\$140 mil por ano para uma unidade varejista de porte médio.
+
+Na \autoref{sec:estimativa_investimento}, estimou-se um investimento de implantação entre R\$70 mil e R\$90 mil para a infraestrutura de inferência necessária ao processamento das câmeras do estabelecimento. Dessa forma, o período de recuperação do capital investido pode ser estimado por:
+
+\begin{equation}
+Payback=
+\frac{Investimento}
+{Ganho\ Anual}
+\end{equation}
+
+resultando em:
+
+\begin{equation}
+Payback_{conservador}
+=
+\frac{90.000}{80.200}
+\approx 1,12 \text{ anos}
+\end{equation}
+
+e
+
+\begin{equation}
+Payback_{otimista}
+=
+\frac{70.000}{140.200}
+\approx 0,50 \text{ anos}
+\end{equation}
+
+Portanto, mesmo considerando hipóteses conservadoras para a infraestrutura computacional e para a efetividade operacional do sistema, observa-se que o investimento apresenta potencial de retorno em um horizonte entre \textbf{seis} e \textbf{quatorze meses}. Além do benefício financeiro direto associado à redução de perdas, a solução proposta ainda oferece vantagens adicionais não quantificadas nesta análise, como aumento da capacidade de monitoramento, padronização da vigilância, redução da fadiga operacional e geração automática de alertas em tempo real para as equipes de prevenção de perdas.
+
 \chapter[Conclusões]{Conclusões}
 
 O presente trabalho abordou um problema crônico para o setor varejista global: a necessidade de identificação automatizada de comportamentos suspeitos e furtos, reduzindo a dependência quase exclusiva e limitante da vigilância humana em CFTVs. Neste contexto, o objetivo principal da pesquisa foi executado comparando empiricamente o desempenho de duas arquiteturas distintas de aprendizado profundo na tarefa de modelagem e detecção de anomalias espaço-temporais em vídeos: a RNC 3D (I3D) e o Transformador de Visão (TimeSFormer). Para viabilizar este estudo, o trabalho apresentou a contribuição metodológica de curadoria e de construção de um banco de dados próprio, agregando, filtrando e segmentando amostras das bases públicas DCSASS, Shoplifting Dataset 2.0 e Shoplifting MNNIT.
@@ -1034,6 +1219,7 @@ Como sugestões para estudos futuros, recomenda-se a expansão do banco de dados
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 % ----------------------------------------------------------
+
 \chapter{Repositórios do Projeto}
 \label{apendice:github}
 % ----------------------------------------------------------
